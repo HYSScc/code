@@ -11,6 +11,7 @@
 		E2774DE21BA076310022794A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E2774DE11BA076310022794A /* Person.m */; };
 		E2774DE61BA088860022794A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = E2774DE51BA088860022794A /* Dog.m */; };
 		E2774DE91BA08C890022794A /* hashiqi.m in Sources */ = {isa = PBXBuildFile; fileRef = E2774DE81BA08C890022794A /* hashiqi.m */; };
+		E2774DEC1BA15F1E0022794A /* hashiqi+xx.m in Sources */ = {isa = PBXBuildFile; fileRef = E2774DEB1BA15F1E0022794A /* hashiqi+xx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		E2774DE51BA088860022794A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		E2774DE71BA08C890022794A /* hashiqi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashiqi.h; sourceTree = "<group>"; };
 		E2774DE81BA08C890022794A /* hashiqi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hashiqi.m; sourceTree = "<group>"; };
+		E2774DEA1BA15F1E0022794A /* hashiqi+xx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hashiqi+xx.h"; sourceTree = "<group>"; };
+		E2774DEB1BA15F1E0022794A /* hashiqi+xx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "hashiqi+xx.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				E2774DE51BA088860022794A /* Dog.m */,
 				E2774DE71BA08C890022794A /* hashiqi.h */,
 				E2774DE81BA08C890022794A /* hashiqi.m */,
+				E2774DEA1BA15F1E0022794A /* hashiqi+xx.h */,
+				E2774DEB1BA15F1E0022794A /* hashiqi+xx.m */,
 			);
 			path = "02-protocol";
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				E2774DE61BA088860022794A /* Dog.m in Sources */,
 				E2774DE21BA076310022794A /* Person.m in Sources */,
+				E2774DEC1BA15F1E0022794A /* hashiqi+xx.m in Sources */,
 				E2774DD91BA074A00022794A /* main.m in Sources */,
 				E2774DE91BA08C890022794A /* hashiqi.m in Sources */,
 			);

@@ -11,3 +11,12 @@
 @implementation hashiqi
 
 @end
+
+@implementation hashiqi (Addxx)
+
+- (void)addTest
+{
+    
+}
+
+@end

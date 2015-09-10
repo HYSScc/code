@@ -8,6 +8,16 @@
 
 #import "Dog.h"
 
-@interface hashiqi : Dog
+@protocol MyDogProtocol <NSObject>
 
+- (void)dogtest;
+
+@end
+
+@interface hashiqi : Dog<MyDogProtocol>
+
+@end
+
+@interface hashiqi (Addxx)
+- (void)addTest;
 @end
