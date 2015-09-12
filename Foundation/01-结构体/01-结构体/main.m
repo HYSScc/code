@@ -11,13 +11,19 @@
 int main(int argc, const char * argv[])
 {
     /*
-     NSRange
+     NSRange(location length)
      NSPoint\CGPoint
      NSSizCGRect
      NSRect\CGRect
      */
     
-    @"i love oc";
+    @"i love oc"; // love的范围
+    
+    NSRange r1 = {2, 4}; // 不用
+    NSRange r2 = {.location = 2, .length = 4}; // 不用
+    
+    NSRange r3 =  NSMakeRange(2, 4);
+    
     
     return 0;
 }
