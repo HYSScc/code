@@ -7,8 +7,22 @@
 //
 
 #import "ViewController.h"
+/*
+IBAction本质就是void，只不过能够允许连线而已
+*/
 
+// 私有扩展，Xcode 4.6开始，苹果建议不开放的属性和方法定义在私有扩展中
+// 可以保证.h中只定义对外开放的属性和方法
 @interface ViewController ()
+
+// 计算方法
+//- (IBAction)compute; // 可以省略，连线已经不连接到私有扩展里面
+
+// 声明两个文本框属性
+@property (nonatomic, weak) IBOutlet UITextField *num1;
+@property (nonatomic, weak) IBOutlet UITextField *num2;
+
+@property (nonatomic, weak) IBOutlet UILabel *resultLabel;
 
 @end
 
@@ -26,7 +40,7 @@
 
 
 // 计算方法的实现
-- (void)compute
+- (IBAction)compute
 {
 
     NSLog(@"compute");

@@ -19,14 +19,7 @@
 */
 @interface ViewController : UIViewController
 
-// 计算方法
-- (IBAction)compute;
 
-// 声明两个文本框属性
-@property (nonatomic, weak) IBOutlet UITextField *num1;
-@property (nonatomic, weak) IBOutlet UITextField *num2;
-
-@property (nonatomic, weak) IBOutlet UILabel *resultLabel;
 
 
 @end
