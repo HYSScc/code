@@ -112,7 +112,7 @@ void test1()
     
     [c1 release];
     
-    p.car = c1;
+    p.car = c1; // 启用了判断，如果不判断，传人还是原来那辆车，那辆车就会被release，再一次调用时，就会发生野指针错误。
     p.car = c1;
     p.car = c1;
     
@@ -135,7 +135,7 @@ void test()
     c2.speed = 300;
     
     // p将车换成了c2
-    p.car = c2;
+    p.car = c2;  // 这里代码还没有启用判断，新车旧车。
     
     [c2 release];
     [c1 release];

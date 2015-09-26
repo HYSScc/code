@@ -17,14 +17,14 @@
  2> 不用关心什么时候调用release
  
  3.autorelease的使用注意
- 1> 占用内存较大的对象不要随便使用autorelease
+ 1> 占用内存较大的对象不要随便使用autorelease，需要精确控制，所以还是用release。
  2> 占用内存较小的对象使用autorelease，没有太大影响
  
  4.错误写法
  1> alloc之后调用了autorelease，又调用了release
     @autoreleasepool
    {
-    Person *p = [[[[Person alloc] init] autorelease];
+    Person *p = [[[Person alloc] init] autorelease];
     [p release];
     }
  
@@ -42,7 +42,7 @@
  1> iOS 5.0前
     NSAutoreleasePool *pool = [NSAutoreleasePool alloc] init];
  
-    [pool release]; // [pool drain];
+    [pool release]; // [pool drain];->用在MAC上
  
  2> iOS 5.0后
     @autoreleasepool

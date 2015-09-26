@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>773FE681-BF48-4C40-A8B1-A05CE73487DF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>11-ARC循环引用</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>内存管理/11-ARC循环引用/11-ARC循环引用.xcodeproj/project.xcworkspace</string>
+	<string>内存管理/11-ARC循环引用/11-ARC循环引用.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

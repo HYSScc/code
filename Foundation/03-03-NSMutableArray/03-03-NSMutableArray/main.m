@@ -29,6 +29,7 @@ int main()
     [array removeObjectAtIndex:1];
     
     // 错误写法
+    // @[] 只能创建不可变数组NSArray
     //[array addObject:10]; // 数组不能定义基本数据类型
     //[array addObject:nil]; // 数组不能为空
     

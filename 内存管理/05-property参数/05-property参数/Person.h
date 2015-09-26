@@ -21,7 +21,7 @@
  1> nonatomic ：性能高（一般就用这个）
  2> atomic    ：性能低（默认）
  
- 4.setter和getter方法的名称
+ 4.setter和getter方法的名称(重命名方法名)
  1> setter: 决定了set方法的名称，一定要有冒号 :
  2> getter：决定了get方法的名称（一般用在BOOL类型）
  

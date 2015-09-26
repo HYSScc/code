@@ -10,7 +10,13 @@
 #import "Person.h"
 
 @implementation Person
+// @synthesize自动生成age的setter和getter实现，并且访问_age这个成员变量
 @synthesize age = _age;
+//@synthesize age = age;
+//- (void)setAge:(int)age
+//{
+//    self->age = age;
+//}
 @synthesize height = _height;
 @synthesize weight = _weight;
 @synthesize name = _name;

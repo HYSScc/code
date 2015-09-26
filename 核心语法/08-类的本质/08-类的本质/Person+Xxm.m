@@ -14,8 +14,8 @@
     NSLog(@"Person(Xxm)----load");
 }
 
-//+ (void)initialize
-//{
-//    NSLog(@"Person(Xxm)---initialize");
-//}
++ (void)initialize
+{
+    NSLog(@"Person(Xxm)---initialize");
+}
 @end

@@ -35,6 +35,7 @@ block要掌握的东西
  typedef int (^MyBlock)(int a, int b);
  // 以后就可以利用MyBlock这种类型来定义block变量
  
+ 定义变量的同时，给block赋值，结束一定要写分号。
  MyBlock block;
  
  MyBlock b1, b2;
@@ -175,7 +176,7 @@ void test()
      1.可以保存代码
      2.有返回值
      3.有形参
-     4.调用方式一样
+     4.调用方式与函数一样。
      */
     
     // 定义block变量

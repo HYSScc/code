@@ -18,7 +18,7 @@ void test9()
 
 int main(int argc, const char * argv[])
 {
-    // 输出行号
+    // 输出当前行号
     NSLog(@"%d", __LINE__);
     
     // NSLog输出C语言字符串的时候，不能有中文
@@ -63,5 +63,5 @@ void test()
     // 1.会调用对象p的—description方法
     // 2.拿到-description方法的返回值（NSString *）显示到屏幕上
     // 3.-description方法默认返回的是“类名+内存地址”
-    NSLog(@"%@", p);
+    NSLog(@"%@", p); // 输出所有属性，但必须重写-description方法
 }

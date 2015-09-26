@@ -8,6 +8,6 @@
 
 #import "hashiqi+xx.h"
 
-@implementation hashiqi (xx)
+@implementation hashiqi (xx) // 实现也可以写在父类的.m文件中
 
 @end

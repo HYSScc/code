@@ -31,21 +31,34 @@ int main(int argc, const char * argv[]) {
     
     Person *p = [[Person alloc] init];
     
-    p.dog = d;
+    p.dog = d; // 下划线dog是强指针，指向Dog对象
     
     d = nil;
     
-    NSLog(@"%@", p.dog);
+    NSLog(@"%@", p.dog); // p.dog是强指针，还是有数值输出
     
     return 0;
 }
 
 void test()
 {
-    // 错误写法（没有意义的写法）
+    // 错误写法（没有意义的写法）一个弱指针指向的对象，直接被释放，无法创建对象。
     __weak Person *p = [[Person alloc] init];
     
     
+
     
     NSLog(@"---");
+}
+
+void test0()
+{
+    Person *p = [[Person alloc] init];
+    
+    __weak Person *p2 = p;
+    
+    p = nil;
+    
+    p2 = nil; // Perosn对象在60行被销毁
+
 }

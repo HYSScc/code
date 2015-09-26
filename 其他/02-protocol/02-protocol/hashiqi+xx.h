@@ -8,6 +8,6 @@
 
 #import "hashiqi.h"
 
-@interface hashiqi (xx)
+@interface hashiqi (xx) // 分类中的声明可以将声明写在父类头文件中
 
 @end

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1C969CB4-CFCC-4D26-831B-52901F4ADCE5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>03-协议的应用-代理模式</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>其他/03-协议的应用-代理模式/03-协议的应用-代理模式.xcodeproj/project.xcworkspace</string>
+	<string>其他/03-协议的应用-代理模式/03-协议的应用-代理模式.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

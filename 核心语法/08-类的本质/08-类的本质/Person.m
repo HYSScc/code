@@ -22,9 +22,9 @@
 }
 
 // 当第一次使用这个类的时候，就会调用一次+initialize方法
-//+ (void)initialize
-//{
-//    NSLog(@"Person---initialize");
-//}
++ (void)initialize
+{
+    NSLog(@"Person---initialize");
+}
 
 @end

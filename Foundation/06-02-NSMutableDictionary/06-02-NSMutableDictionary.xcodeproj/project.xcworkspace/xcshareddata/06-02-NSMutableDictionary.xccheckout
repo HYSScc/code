@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>78F47E05-6A61-430C-9BDE-ECDEC3D7BDE6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>06-02-NSMutableDictionary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Foundation/06-02-NSMutableDictionary/06-02-NSMutableDictionary.xcodeproj/project.xcworkspace</string>
+	<string>Foundation/06-02-NSMutableDictionary/06-02-NSMutableDictionary.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

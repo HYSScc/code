@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>584CAC88-7947-49AE-B298-DF34BC76B35D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>09-01-NSDate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Foundation/09-01-NSDate/09-01-NSDate.xcodeproj/project.xcworkspace</string>
+	<string>Foundation/09-01-NSDate/09-01-NSDate.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

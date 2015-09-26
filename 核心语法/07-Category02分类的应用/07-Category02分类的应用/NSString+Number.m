@@ -15,9 +15,9 @@
     // 定义变量计算数字的个数
     int count = 0;
     
-    for (int i = 0; i<str.length; i++)
+    for (int i = 0; i<str.length; i++) // 调用了length的get方法
     
-    {unichar c = [str characterAtIndex:i];
+    {unichar c = [str characterAtIndex:i]; // 调用对象方法返回给定的字符数组的位置
         if ( c>='0' && c<='9')
         {
             count++;

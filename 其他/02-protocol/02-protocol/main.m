@@ -64,7 +64,7 @@ int main()
 {
     Person *p = [[Person alloc] init];
     
-    p.obj = [[Dog alloc] init];
+    p.obj = [[Dog alloc] init]; // obj遵守Protocol协议，要Dog也满足Protocol协议，才能匹配，才不会警告。
     
     p.obj = [[hashiqi alloc] init];
     return 0;
@@ -74,19 +74,21 @@ void test()
 {
     //NSObject *obj = [[NSObject alloc] init];
     
+    
+    // 多态
     //NSObject *obj2 = @"234232";
     
     // 要求obj3保存的对象必须是遵守是MyProtocol这个协议的
     
     //NSObject<MyProtocol> *obj3;
     
-    //obj3 = [[NSObject alloc] init];
+    //obj3 = [[NSObject alloc] init]; // NSObject没有遵守这个协议，会发出警告
     
-    NSObject<MyProtocol> *obj4 = [[Person alloc] init];
+    NSObject<MyProtocol> *obj4 = [[Person alloc] init]; // Person对象遵守协议
     
     obj4 = nil;
     
-    id<MyProtocol> obj5 = [[Person alloc] init];
+    id<MyProtocol> obj5 = [[Person alloc] init]; // id == NSObject*
     
     obj5 = nil;
     

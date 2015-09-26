@@ -27,7 +27,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         GoodPerson *p = [GoodPerson personWithAge:10];
         
-        p.money = 100;
+        p.money = 100; // 如果方法中没有写self返回时是创建一个Person对象，然后对person对象设置年龄。会报错
     }
         return 0;
 }

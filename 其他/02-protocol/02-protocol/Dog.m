@@ -8,6 +8,6 @@
 
 #import "Dog.h"
 #import "MyProtocol.h"
-@implementation Dog
+@implementation Dog //警告是没有实现协议中的方法
 
 @end

@@ -10,7 +10,7 @@
 
 // 定义了一个名叫MyProtocol的协议
 @protocol MyProtocol <NSObject>
-// @required // 必须实现
+// @required // 必须实现 默认
 // @optional // 选择实现
 
 @required // 必须实现

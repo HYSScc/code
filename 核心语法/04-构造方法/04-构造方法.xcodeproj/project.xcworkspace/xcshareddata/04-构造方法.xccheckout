@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3EFA8700-0E70-41F4-94FE-32851450AAC6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>04-构造方法</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>核心语法/04-构造方法/04-构造方法.xcodeproj/project.xcworkspace</string>
+	<string>核心语法/04-构造方法/04-构造方法.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

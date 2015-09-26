@@ -27,7 +27,7 @@ int main()
     
     id obj = dict[@"name"];
     
-    //NSLog(@"%@", obj);
+    NSLog(@"%@", obj);
     
     NSLog(@"%@", dict);
     

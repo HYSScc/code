@@ -17,15 +17,15 @@
 - (void)test2
 {
     
-    
+    // 每个方法内部都有个隐藏的SEL数据_cmd
     // _cmd代表着当前方法
     //_cmd == @selector(test2);
     
-    //NSString *str = NSStringFromSelestor(_cmd);
+   // NSString *str = NSStringFromSelestor(_cmd); // _cmd不能直接打印，转成字符串类型打印
     
     // 会引发死循环
     //[self performSelector:_cmd];
     
-    NSLog(@"test2---");
+    //NSLog(@"test2---%@", str);
 }
 @end

@@ -9,12 +9,13 @@
 #import "Dog.h"
 
 @implementation Dog
-// @synthesize age = _age;
+//@synthesize age = _age;
 //- (int)age
 //{
 //    return 10;
 //}
 
+// 同时实现set和get方法，@property就不会生成setter和getter方法和_age成员变量
 - (void)setAge:(int)age
 {
     _age = age;

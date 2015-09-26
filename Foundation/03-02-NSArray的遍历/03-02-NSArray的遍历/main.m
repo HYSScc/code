@@ -20,8 +20,9 @@ int main()
 //        NSLog(@"%@", array[i]);
 //    }
     
+    // 快速遍历
     // 打印数组中的元素
-    // id obj代表着数组中的每一个元素
+    // id obj代表着数组中的每一个元素,id obj in array会把数组中的每一个元素赋值给obj，赋值一次就调用一次循环体
 //    for (id obj in array)
 //    {
 //        // 找出obj元素在数组中的位置(索引)

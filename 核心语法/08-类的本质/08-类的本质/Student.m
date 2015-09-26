@@ -14,8 +14,8 @@
     NSLog(@"Student----load");
 }
 
-//+ (void)initialize
-//{
-//    NSLog(@"Student---initialize");
-//}
++ (void)initialize
+{
+    NSLog(@"Student---initialize");
+}
 @end

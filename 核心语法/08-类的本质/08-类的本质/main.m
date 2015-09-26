@@ -12,16 +12,16 @@
 
 /*
  1.当程序启动时，就会加载项目中的所有的类和分类，而且加载后会调用每个分类的+load方法。只会调用一次。
- 2.当第一次使用某个类时，就会调用当前类的+initialize方法
+ 2.当第一次使用某个类时，就会调用当前类的+initialize方法(调用时初始化，不调用就不初始化)
  3.先加载父类，再加载子类(先调用父类的+load方法，再调用子类的+load方法)
  先初始化父类，再初始化子类(先调用父类的+initialize方法，在调用子类的+initialize方法)
- 
+ 4.类和分类优先选择分类中的initialize方法。类和子类，调用子类时，都会调用initialize方法。
  */
 
 int main(int argc, const char * argv[]) {
    
     
-    [[Person alloc] init];
+    [[Student alloc] init];
     
     return 0;
 }
@@ -50,9 +50,9 @@ void test()
     Person *p3 = [[Person alloc] init];
     
     // 获取内存中的类对象
-    Class c = [p class];
+    Class c = [p class]; // class方法
     
-    Class c2 = [p class];
+    Class c2 = [p class]; // c与c2相同，都是同一个类对象
     
     // 获取内存中的类对象
     Class c3 = [Person class];

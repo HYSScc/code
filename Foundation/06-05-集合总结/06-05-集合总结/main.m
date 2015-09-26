@@ -29,7 +29,7 @@ NSDictionary    Map
 */
 int main()
 {
-    // 通讯录(保存4个人的基本信息)
+    // 通讯录(保存4个人的基本信息) 数组字典
     NSArray *persons = @[
       
       @{@"name" : @"xxx", @"qq" : @"123"},
@@ -39,6 +39,7 @@ int main()
       
       ];
     // 方法一
+    // 取出数组元素
     //NSDictionary *xxq = persons[1];
     
     //NSLog(@"%@", xxq);
@@ -47,7 +48,7 @@ int main()
     // 方法二
     // 先取出1位置对应的字典
     // 再取出字典中qq这个key对应的数据
-    //NSLog(@"%@", persons[1][@"qq"]);
+    //NSLog(@"%@", persons[1][@"qq"]); Person[1]取出字典，再取出字典中key所对应的内容
 
     // 方法三
     //NSArray *array = persons[3][@"books"];
@@ -55,7 +56,7 @@ int main()
     //NSLog(@"%@", array);
     
     // 方法四
-    NSLog(@"%@", persons[3][@"books"][0]);
+    NSLog(@"%@", persons[3][@"books"][0]); //Person[3]取出字典，再取出字典中key所对应的内容，返回的是一个数组，再取出数组中的0位置的元素。
     
     return 0;
 }

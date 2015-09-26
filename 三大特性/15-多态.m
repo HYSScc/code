@@ -61,7 +61,7 @@
 //}
 
 // 如果参数中使用的是父类类型，可以传入父类、子类对象
-void feed(Animal *a)
+void feed(Animal *a) // 同时能喂狗和猫
 {
     [a eat];
 }

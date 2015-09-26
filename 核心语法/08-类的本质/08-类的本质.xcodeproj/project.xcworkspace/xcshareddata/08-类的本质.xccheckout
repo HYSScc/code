@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B616D62F-2638-4302-8B6E-0466020BBB2F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>08-类的本质</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>核心语法/08-类的本质/08-类的本质.xcodeproj/project.xcworkspace</string>
+	<string>核心语法/08-类的本质/08-类的本质.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

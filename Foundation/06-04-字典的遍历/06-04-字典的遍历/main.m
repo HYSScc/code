@@ -10,7 +10,7 @@
 
 int main()
 {
-    // 字典不允许有相同的key，但允许有相同的value（Object）
+    // 字典不允许有相同的key，但允许有相同的value（Object），不然一个key取出多个值。
     // 字典是无序的
     NSDictionary *dict = @{@"name" : @"Jack", @"qq" : @"3255"};
     
@@ -21,9 +21,9 @@ int main()
     for (int i = 0; i<dict.count; i++)
     {
         
-        //[keys objectAtIndex:<#(NSUInteger)#>];
-        NSString *key = keys[i];
-        NSString *object = dict[key];
+        //[keys objectAtIndex:i]; // 方法太长，直接用keys[i];
+        NSString *key = keys[i];  // 简写，取出key
+        NSString *object = dict[key]; // 简写，根据key取出字典中的文件内容
         
         
         NSLog(@"%@ = %@", key, object);

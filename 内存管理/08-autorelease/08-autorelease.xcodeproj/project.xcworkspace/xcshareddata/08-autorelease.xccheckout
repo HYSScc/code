@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>29AD4DB0-67CA-47EB-B7D3-006B09323796</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>08-autorelease</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>内存管理/08-autorelease/08-autorelease.xcodeproj/project.xcworkspace</string>
+	<string>内存管理/08-autorelease/08-autorelease.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

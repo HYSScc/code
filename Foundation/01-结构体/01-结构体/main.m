@@ -25,7 +25,7 @@ int main(int argc, const char * argv[])
     //CGSizeEqualToSize(<#CGSize size1#>, <#CGSize size2#>)
     //CGRectEqualToRect(<#CGRect rect1#>, <#CGRect rect2#>)
     
-    BOOL b2 = CGRectContainsPoint(CGRectMake(50, 40, 100, 50), CGPointMake(130, 70));
+    BOOL b2 = CGRectContainsPoint(CGRectMake(50, 40, 100, 50), CGPointMake(130, 70)); //判断范围中，是否包含这个点
     
     
     NSLog(@"%d", b2);
@@ -46,7 +46,7 @@ int main(int argc, const char * argv[])
 
 void point()
 {
-    CGPoint p1 = NSMakePoint(10, 10); //
+    CGPoint p1 = NSMakePoint(10, 10); // 函数调用，返回是CGPoint
     NSPoint p2 = CGPointMake(20, 20); // 两种方法相同，下者更常用
     
     
@@ -63,7 +63,7 @@ void point()
     // 表示原点
     //CGPointZero == CGPointMake(0, 0);
     
-    NSString *str =  NSStringFromPoint(p1);
+    NSString *str =  NSStringFromPoint(p1); // 将结构体转字符串 ，直接打印
     NSLog(@"%@", str);
     
     NSString *str2 = NSStringFromRect(r1);
@@ -81,7 +81,7 @@ void range()
     //    NSRange r1 = {2, 4}; // 不用
     //    NSRange r2 = {.location = 2, .length = 4}; // 不用
     //
-    //    NSRange r3 =  NSMakeRange(2, 4);
+    //    NSRange r3 =  NSMakeRange(2, 4); // Foundation自带函数，确定love的范围
     
     
     
@@ -89,11 +89,11 @@ void range()
     
     
     // 输出字符串中love的location和length
-    NSString *str = @"i love oc";
+    NSString *str = @"i love oc"; // 字符串的创建
     
     // 查找某个字符串在str中的范围
     // 如果找不到，length=0，location==NSNotFound==-1
-    NSRange range = [str rangeOfString:@"love"];
+    NSRange range = [str rangeOfString:@"love"]; // 系统自带的方法，查找某个字符串的范围
     
     NSLog(@"loc = %ld, length = %ld", range.location, range.length);
 
