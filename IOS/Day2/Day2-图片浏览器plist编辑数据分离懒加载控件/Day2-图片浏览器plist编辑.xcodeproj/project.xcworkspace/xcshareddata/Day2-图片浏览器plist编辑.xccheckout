@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0EF68DE7-1B92-4F10-A57E-3A78E2C342F4</string>
+	<string>B59945DD-14E0-400B-9638-D5BCC63C2FCF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Day2-图片浏览器plist编辑</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS/Day2/Day2-图片浏览器优化+数组修改数据/Day2-图片浏览器优化+数组修改数据.xcodeproj/project.xcworkspace</string>
+	<string>IOS/Day2/Day2-图片浏览器plist编辑数据分离懒加载控件/Day2-图片浏览器plist编辑.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

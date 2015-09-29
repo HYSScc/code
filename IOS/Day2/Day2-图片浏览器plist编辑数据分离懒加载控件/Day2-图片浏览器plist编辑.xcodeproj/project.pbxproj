@@ -14,6 +14,7 @@
 		E2EC7D2C1BBA948900DFCD67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EC7D2B1BBA948900DFCD67 /* Images.xcassets */; };
 		E2EC7D2F1BBA948900DFCD67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EC7D2D1BBA948900DFCD67 /* LaunchScreen.xib */; };
 		E2EC7D3B1BBA948900DFCD67 /* Day2______plist__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC7D3A1BBA948900DFCD67 /* Day2______plist__Tests.m */; };
+		E2EC7D451BBA960400DFCD67 /* imageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EC7D441BBA960400DFCD67 /* imageList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E2EC7D341BBA948900DFCD67 /* Day2-图片浏览器plist编辑Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day2-图片浏览器plist编辑Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EC7D391BBA948900DFCD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EC7D3A1BBA948900DFCD67 /* Day2______plist__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Day2______plist__Tests.m"; sourceTree = "<group>"; };
+		E2EC7D441BBA960400DFCD67 /* imageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				E2EC7D231BBA948900DFCD67 /* AppDelegate.m */,
 				E2EC7D251BBA948900DFCD67 /* ViewController.h */,
 				E2EC7D261BBA948900DFCD67 /* ViewController.m */,
+				E2EC7D441BBA960400DFCD67 /* imageList.plist */,
 				E2EC7D281BBA948900DFCD67 /* Main.storyboard */,
 				E2EC7D2B1BBA948900DFCD67 /* Images.xcassets */,
 				E2EC7D2D1BBA948900DFCD67 /* LaunchScreen.xib */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EC7D451BBA960400DFCD67 /* imageList.plist in Resources */,
 				E2EC7D2A1BBA948900DFCD67 /* Main.storyboard in Resources */,
 				E2EC7D2F1BBA948900DFCD67 /* LaunchScreen.xib in Resources */,
 				E2EC7D2C1BBA948900DFCD67 /* Images.xcassets in Resources */,
