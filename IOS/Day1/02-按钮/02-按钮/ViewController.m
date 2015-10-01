@@ -22,7 +22,7 @@
 
 
 // 向上移动
-- (IBAction)top:(id)sender
+- (IBAction)top
 {
     // 修改位置可以用frame
     // 在OC中，不允许直接修改对象的结构体属性的成员

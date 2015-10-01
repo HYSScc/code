@@ -40,7 +40,7 @@
                                     <rect key="frame" x="50" y="300" width="40" height="40"/>
                                 </variation>
                                 <connections>
-                                    <action selector="top:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGx-9i-ZK7"/>
+                                    <action selector="top" destination="BYZ-38-t0r" eventType="touchUpInside" id="gne-mI-ed2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-vJ-A5A">

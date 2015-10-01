@@ -19,8 +19,53 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wwa-DX-kDx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-yq-EKj">
+                                <rect key="frame" x="10" y="508" width="60" height="60"/>
+                                <state key="normal" backgroundImage="cymbal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cymbal" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hoM-H4-Ss2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-2k-mWU">
+                                <rect key="frame" x="10" y="440" width="60" height="60"/>
+                                <state key="normal" backgroundImage="drink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drink" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BhY-1c-Hma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FML-lg-fWn">
+                                <rect key="frame" x="299" y="576" width="60" height="60"/>
+                                <state key="normal" backgroundImage="scratch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scratch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9mE-SF-bbf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBU-pQ-RQj">
+                                <rect key="frame" x="299" y="508" width="60" height="60"/>
+                                <state key="normal" backgroundImage="fart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fart" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e89-9q-ujn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMW-kZ-VDx">
+                                <rect key="frame" x="299" y="440" width="60" height="60"/>
+                                <state key="normal" backgroundImage="pie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pie" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3au-Wf-kFW"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpB-Iw-6iq">
-                                <rect key="frame" x="10" y="555" width="60" height="60"/>
+                                <rect key="frame" x="10" y="576" width="60" height="60"/>
                                 <state key="normal" backgroundImage="eat">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,14 +73,8 @@
                                     <action selector="eatBird" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V0e-hn-qD0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-PZ-ccb">
-                                <rect key="frame" x="69" y="83" width="181" height="153"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLt-5F-Vov">
-                                <rect key="frame" x="91" y="115" width="193" height="215"/>
+                                <rect key="frame" x="83" y="115" width="193" height="215"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -58,7 +97,12 @@
     </scenes>
     <resources>
         <image name="angry_00.jpg" width="640" height="1024"/>
+        <image name="cymbal" width="60" height="60"/>
+        <image name="drink" width="60" height="60"/>
         <image name="eat" width="60" height="60"/>
+        <image name="fart" width="60" height="60"/>
+        <image name="pie" width="60" height="60"/>
+        <image name="scratch" width="60" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

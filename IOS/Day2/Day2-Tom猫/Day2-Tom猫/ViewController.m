@@ -89,6 +89,31 @@
 
 }
 
+- (IBAction)Cymbal
+{
+    [self tomAnimationWithName:@"cymbal" count:13];
+}
+
+- (IBAction)drink
+{
+    [self tomAnimationWithName:@"drink" count:81];
+}
+
+- (IBAction)fart
+{
+    [self tomAnimationWithName:@"fart" count:28];
+}
+
+- (IBAction)pie
+{
+    [self tomAnimationWithName:@"pie" count:24];
+}
+
+- (IBAction)scratch
+{
+    [self tomAnimationWithName:@"scratch" count:56];
+}
+
 - (IBAction)eatBird
 {
     [self tomAnimationWithName:@"eat" count:40];

@@ -35,6 +35,7 @@
     
     btn.backgroundColor = [UIColor redColor];
     
+    
     // 设置背景图片(按钮能显示图片和文字，而且是有状态的)
     [btn setBackgroundImage:[UIImage imageNamed:@"btn_01"] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:@"btn_02"] forState:UIControlStateHighlighted];
