@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E25E398A1BBD75C90078FE9A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E25E39891BBD75C90078FE9A /* AppInfo.m */; };
 		E2EC891F1BBD1F2C00DFCD67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC891E1BBD1F2C00DFCD67 /* main.m */; };
 		E2EC89221BBD1F2C00DFCD67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC89211BBD1F2C00DFCD67 /* AppDelegate.m */; };
 		E2EC89251BBD1F2C00DFCD67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC89241BBD1F2C00DFCD67 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		E2EC892A1BBD1F2C00DFCD67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EC89291BBD1F2C00DFCD67 /* Images.xcassets */; };
 		E2EC892D1BBD1F2C00DFCD67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EC892B1BBD1F2C00DFCD67 /* LaunchScreen.xib */; };
 		E2EC89391BBD1F2C00DFCD67 /* _1_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC89381BBD1F2C00DFCD67 /* _1_______Tests.m */; };
+		E2EC89621BBD3CDA00DFCD67 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EC89611BBD3CDA00DFCD67 /* app.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E25E39881BBD75C90078FE9A /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		E25E39891BBD75C90078FE9A /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		E2EC89191BBD1F2C00DFCD67 /* 01-应用程序管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-应用程序管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EC891D1BBD1F2C00DFCD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EC891E1BBD1F2C00DFCD67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		E2EC89321BBD1F2C00DFCD67 /* 01-应用程序管理Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-应用程序管理Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EC89371BBD1F2C00DFCD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EC89381BBD1F2C00DFCD67 /* _1_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1_______Tests.m"; sourceTree = "<group>"; };
+		E2EC89611BBD3CDA00DFCD67 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				E2EC89211BBD1F2C00DFCD67 /* AppDelegate.m */,
 				E2EC89231BBD1F2C00DFCD67 /* ViewController.h */,
 				E2EC89241BBD1F2C00DFCD67 /* ViewController.m */,
+				E25E39881BBD75C90078FE9A /* AppInfo.h */,
+				E25E39891BBD75C90078FE9A /* AppInfo.m */,
 				E2EC89261BBD1F2C00DFCD67 /* Main.storyboard */,
 				E2EC89291BBD1F2C00DFCD67 /* Images.xcassets */,
 				E2EC892B1BBD1F2C00DFCD67 /* LaunchScreen.xib */,
@@ -96,6 +103,7 @@
 		E2EC891C1BBD1F2C00DFCD67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2EC89611BBD3CDA00DFCD67 /* app.plist */,
 				E2EC891D1BBD1F2C00DFCD67 /* Info.plist */,
 				E2EC891E1BBD1F2C00DFCD67 /* main.m */,
 			);
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EC89621BBD3CDA00DFCD67 /* app.plist in Resources */,
 				E2EC89281BBD1F2C00DFCD67 /* Main.storyboard in Resources */,
 				E2EC892D1BBD1F2C00DFCD67 /* LaunchScreen.xib in Resources */,
 				E2EC892A1BBD1F2C00DFCD67 /* Images.xcassets in Resources */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EC89251BBD1F2C00DFCD67 /* ViewController.m in Sources */,
+				E25E398A1BBD75C90078FE9A /* AppInfo.m in Sources */,
 				E2EC89221BBD1F2C00DFCD67 /* AppDelegate.m in Sources */,
 				E2EC891F1BBD1F2C00DFCD67 /* main.m in Sources */,
 			);
@@ -416,6 +426,7 @@
 				E2EC893E1BBD1F2C00DFCD67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2EC893F1BBD1F2C00DFCD67 /* Build configuration list for PBXNativeTarget "01-应用程序管理Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +435,7 @@
 				E2EC89411BBD1F2C00DFCD67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
