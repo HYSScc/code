@@ -27,11 +27,13 @@
         
         // 创建一个临时数组
         NSMutableArray *arrayM = [NSMutableArray array];
+
         // 遍历数组，依次转换模型
         for (NSDictionary *dict in array){
             AppInfo *appInfo = [[AppInfo alloc] init];
             appInfo.name = dict[@"name"];
             appInfo.icon = dict[@"icon"];
+            
             
             [arrayM addObject:appInfo];
         }
