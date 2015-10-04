@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A9A02A14-F526-459E-BC88-23B7554E3C12</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>01-超级猜图</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS/Day4/01-超级猜图/01-超级猜图.xcodeproj/project.xcworkspace</string>
+	<string>IOS/Day4/01-超级猜图/01-超级猜图.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
