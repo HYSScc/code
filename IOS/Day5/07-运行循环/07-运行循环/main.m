@@ -8,10 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+int main() {
+    
+    int a = 0;
+    while (YES) {
+        printf("请输入选择， 0表示退出");
+        scanf("%d", &a);
+        
+        if (a == 0) {
+            NSLog(@"程序结束");
+            break;
+        }else
+        {
+            NSLog(@"进入%d程序", a);
+        
+        }
+        
+        NSLog(@"come here");
     }
+    
+    
     return 0;
 }
