@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>481380A9-D036-4139-A8AF-5B8F7622060C</string>
+	<string>986F0167-9A64-4729-AEF4-C81E536C4F1B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>04-喜马拉雅</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS/Day5/04-喜马拉雅/04-喜马拉雅.xcodeproj</string>
+	<string>IOS/Day5/07-运行循环/07-运行循环.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
