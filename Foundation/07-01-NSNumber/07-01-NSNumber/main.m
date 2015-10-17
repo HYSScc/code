@@ -34,7 +34,7 @@ int main()
     
     
     // @20 将 20包装成NSNumber对象
-    NSArray *array = @[
+    NSArray *array1 = @[
       
       @{@"name" : @"Jack", @"age" : [NSNumber numberWithInt:20]},
       @{@"name" : @"Rose", @"age" : [NSNumber numberWithInt:22]},

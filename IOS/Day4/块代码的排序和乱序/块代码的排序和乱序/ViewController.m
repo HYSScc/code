@@ -51,6 +51,27 @@
     
     
     
+//    // 块代码数组的排序
+//    array = [array sortedArrayUsingComparator:^NSComparisonResult(NSNumber *num1, NSNumber *num2) {
+//        
+//        /**
+//         1 4 5 2
+//         4 1 5 2
+//         4 1 5 2
+//         5 4 1 2
+//         5 4 1 2
+//         5 4 2 1
+//         */
+//        
+//        NSLog(@"%@ %@", num1, num2);
+//        
+//        return [num2 compare:num1]; // 降序,num1和num2交换位置变为升序
+//    }];
+//    
+//    NSLog(@"%@", array);
+
+    
+    
 }
 
 // 块代码数组的排序(升序，降序)

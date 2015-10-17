@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>ED1E0330-8A9C-4101-A7A7-E918DC16FC81</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>块代码的排序和乱序</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>
 		<string>https://github.com/Mrxxm/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS/Day4/块代码的排序和乱序/块代码的排序和乱序.xcodeproj/project.xcworkspace</string>
+	<string>IOS/Day4/块代码的排序和乱序/块代码的排序和乱序.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>80BBCBB7ADEFFE3AD513334761764D1528BD06BB</key>

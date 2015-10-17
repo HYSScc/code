@@ -43,7 +43,7 @@ int main()
     // 读取文件
     NSURL *url = [[NSURL alloc] initWithString:@"file:///Users/tom/Desktop/"];
     NSString *s6 = [[NSString alloc] initWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-    NSLog(@"s6=\n%@", s6);
+    NSLog(@"s5=%@", s5);
     
     
     
@@ -60,8 +60,8 @@ int main()
     
     
     
-    
-    // 字符串导出保存//YES原子性
+        // 字符串导出保存//YES原子性
+
     [@"jack\njack" writeToFile:@"/Users/tom/Desktop/字符串创建.txt" atomically:YES encoding:NSUTF8StringEncoding error:nil];
     
     NSString *str3 = @"432352";

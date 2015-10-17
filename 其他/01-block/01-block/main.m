@@ -59,8 +59,8 @@ int sum(int a, int b)
 
 int main(int argc, const char * argv[])
 {
-    //int (*p) (int, int) = sum;
-    //int (*p2) (int, int) = sum;
+//    int (*p) (int, int) = sum;
+//    int (*p2) (int, int) = sum;
     //Sump p = sum;
     //Sump p2 = sum;
     
