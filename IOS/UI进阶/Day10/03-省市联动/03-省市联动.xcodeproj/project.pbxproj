@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2635DB81BF2BDB400B449D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DB71BF2BDB400B449D0 /* main.m */; };
+		E2635DBB1BF2BDB400B449D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DBA1BF2BDB400B449D0 /* AppDelegate.m */; };
+		E2635DBE1BF2BDB400B449D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DBD1BF2BDB400B449D0 /* ViewController.m */; };
+		E2635DC11BF2BDB400B449D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2635DBF1BF2BDB400B449D0 /* Main.storyboard */; };
+		E2635DC31BF2BDB400B449D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2635DC21BF2BDB400B449D0 /* Assets.xcassets */; };
+		E2635DC61BF2BDB400B449D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2635DC41BF2BDB400B449D0 /* LaunchScreen.storyboard */; };
+		E2635DD11BF2BDB400B449D0 /* _3_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DD01BF2BDB400B449D0 /* _3_____Tests.m */; };
+		E2635DDC1BF2BDB400B449D0 /* _3_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DDB1BF2BDB400B449D0 /* _3_____UITests.m */; };
+		E2635DEA1BF2BE6800B449D0 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2635DE91BF2BE6800B449D0 /* provinces.plist */; settings = {ASSET_TAGS = (); }; };
+		E2635DEE1BF2BF0300B449D0 /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2635DED1BF2BF0300B449D0 /* ProvinceModel.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2635DCD1BF2BDB400B449D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2635DAB1BF2BDB400B449D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2635DB21BF2BDB400B449D0;
+			remoteInfo = "03-省市联动";
+		};
+		E2635DD81BF2BDB400B449D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2635DAB1BF2BDB400B449D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2635DB21BF2BDB400B449D0;
+			remoteInfo = "03-省市联动";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2635DB31BF2BDB400B449D0 /* 03-省市联动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-省市联动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2635DB71BF2BDB400B449D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2635DB91BF2BDB400B449D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2635DBA1BF2BDB400B449D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2635DBC1BF2BDB400B449D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2635DBD1BF2BDB400B449D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2635DC01BF2BDB400B449D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2635DC21BF2BDB400B449D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2635DC51BF2BDB400B449D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2635DC71BF2BDB400B449D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2635DCC1BF2BDB400B449D0 /* 03-省市联动Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-省市联动Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2635DD01BF2BDB400B449D0 /* _3_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3_____Tests.m"; sourceTree = "<group>"; };
+		E2635DD21BF2BDB400B449D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2635DD71BF2BDB400B449D0 /* 03-省市联动UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-省市联动UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2635DDB1BF2BDB400B449D0 /* _3_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3_____UITests.m"; sourceTree = "<group>"; };
+		E2635DDD1BF2BDB400B449D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2635DE91BF2BE6800B449D0 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		E2635DEC1BF2BF0300B449D0 /* ProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceModel.h; sourceTree = "<group>"; };
+		E2635DED1BF2BF0300B449D0 /* ProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2635DB01BF2BDB400B449D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DC91BF2BDB400B449D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DD41BF2BDB400B449D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2635DAA1BF2BDB400B449D0 = {
+			isa = PBXGroup;
+			children = (
+				E2635DB51BF2BDB400B449D0 /* 03-省市联动 */,
+				E2635DCF1BF2BDB400B449D0 /* 03-省市联动Tests */,
+				E2635DDA1BF2BDB400B449D0 /* 03-省市联动UITests */,
+				E2635DB41BF2BDB400B449D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2635DB41BF2BDB400B449D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DB31BF2BDB400B449D0 /* 03-省市联动.app */,
+				E2635DCC1BF2BDB400B449D0 /* 03-省市联动Tests.xctest */,
+				E2635DD71BF2BDB400B449D0 /* 03-省市联动UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2635DB51BF2BDB400B449D0 /* 03-省市联动 */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DB91BF2BDB400B449D0 /* AppDelegate.h */,
+				E2635DBA1BF2BDB400B449D0 /* AppDelegate.m */,
+				E2635DBC1BF2BDB400B449D0 /* ViewController.h */,
+				E2635DEB1BF2BEC000B449D0 /* Model */,
+				E2635DBD1BF2BDB400B449D0 /* ViewController.m */,
+				E2635DB61BF2BDB400B449D0 /* Supporting Files */,
+			);
+			path = "03-省市联动";
+			sourceTree = "<group>";
+		};
+		E2635DB61BF2BDB400B449D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DBF1BF2BDB400B449D0 /* Main.storyboard */,
+				E2635DC21BF2BDB400B449D0 /* Assets.xcassets */,
+				E2635DC41BF2BDB400B449D0 /* LaunchScreen.storyboard */,
+				E2635DC71BF2BDB400B449D0 /* Info.plist */,
+				E2635DE91BF2BE6800B449D0 /* provinces.plist */,
+				E2635DB71BF2BDB400B449D0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2635DCF1BF2BDB400B449D0 /* 03-省市联动Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DD01BF2BDB400B449D0 /* _3_____Tests.m */,
+				E2635DD21BF2BDB400B449D0 /* Info.plist */,
+			);
+			path = "03-省市联动Tests";
+			sourceTree = "<group>";
+		};
+		E2635DDA1BF2BDB400B449D0 /* 03-省市联动UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DDB1BF2BDB400B449D0 /* _3_____UITests.m */,
+				E2635DDD1BF2BDB400B449D0 /* Info.plist */,
+			);
+			path = "03-省市联动UITests";
+			sourceTree = "<group>";
+		};
+		E2635DEB1BF2BEC000B449D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2635DEC1BF2BF0300B449D0 /* ProvinceModel.h */,
+				E2635DED1BF2BF0300B449D0 /* ProvinceModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2635DB21BF2BDB400B449D0 /* 03-省市联动 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2635DE01BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动" */;
+			buildPhases = (
+				E2635DAF1BF2BDB400B449D0 /* Sources */,
+				E2635DB01BF2BDB400B449D0 /* Frameworks */,
+				E2635DB11BF2BDB400B449D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-省市联动";
+			productName = "03-省市联动";
+			productReference = E2635DB31BF2BDB400B449D0 /* 03-省市联动.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2635DCB1BF2BDB400B449D0 /* 03-省市联动Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2635DE31BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动Tests" */;
+			buildPhases = (
+				E2635DC81BF2BDB400B449D0 /* Sources */,
+				E2635DC91BF2BDB400B449D0 /* Frameworks */,
+				E2635DCA1BF2BDB400B449D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2635DCE1BF2BDB400B449D0 /* PBXTargetDependency */,
+			);
+			name = "03-省市联动Tests";
+			productName = "03-省市联动Tests";
+			productReference = E2635DCC1BF2BDB400B449D0 /* 03-省市联动Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2635DD61BF2BDB400B449D0 /* 03-省市联动UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2635DE61BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动UITests" */;
+			buildPhases = (
+				E2635DD31BF2BDB400B449D0 /* Sources */,
+				E2635DD41BF2BDB400B449D0 /* Frameworks */,
+				E2635DD51BF2BDB400B449D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2635DD91BF2BDB400B449D0 /* PBXTargetDependency */,
+			);
+			name = "03-省市联动UITests";
+			productName = "03-省市联动UITests";
+			productReference = E2635DD71BF2BDB400B449D0 /* 03-省市联动UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2635DAB1BF2BDB400B449D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "tom-pc";
+				TargetAttributes = {
+					E2635DB21BF2BDB400B449D0 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E2635DCB1BF2BDB400B449D0 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E2635DB21BF2BDB400B449D0;
+					};
+					E2635DD61BF2BDB400B449D0 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E2635DB21BF2BDB400B449D0;
+					};
+				};
+			};
+			buildConfigurationList = E2635DAE1BF2BDB400B449D0 /* Build configuration list for PBXProject "03-省市联动" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2635DAA1BF2BDB400B449D0;
+			productRefGroup = E2635DB41BF2BDB400B449D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2635DB21BF2BDB400B449D0 /* 03-省市联动 */,
+				E2635DCB1BF2BDB400B449D0 /* 03-省市联动Tests */,
+				E2635DD61BF2BDB400B449D0 /* 03-省市联动UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2635DB11BF2BDB400B449D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2635DC61BF2BDB400B449D0 /* LaunchScreen.storyboard in Resources */,
+				E2635DC31BF2BDB400B449D0 /* Assets.xcassets in Resources */,
+				E2635DEA1BF2BE6800B449D0 /* provinces.plist in Resources */,
+				E2635DC11BF2BDB400B449D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DCA1BF2BDB400B449D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DD51BF2BDB400B449D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2635DAF1BF2BDB400B449D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2635DBE1BF2BDB400B449D0 /* ViewController.m in Sources */,
+				E2635DEE1BF2BF0300B449D0 /* ProvinceModel.m in Sources */,
+				E2635DBB1BF2BDB400B449D0 /* AppDelegate.m in Sources */,
+				E2635DB81BF2BDB400B449D0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DC81BF2BDB400B449D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2635DD11BF2BDB400B449D0 /* _3_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2635DD31BF2BDB400B449D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2635DDC1BF2BDB400B449D0 /* _3_____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2635DCE1BF2BDB400B449D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2635DB21BF2BDB400B449D0 /* 03-省市联动 */;
+			targetProxy = E2635DCD1BF2BDB400B449D0 /* PBXContainerItemProxy */;
+		};
+		E2635DD91BF2BDB400B449D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2635DB21BF2BDB400B449D0 /* 03-省市联动 */;
+			targetProxy = E2635DD81BF2BDB400B449D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2635DBF1BF2BDB400B449D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2635DC01BF2BDB400B449D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2635DC41BF2BDB400B449D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2635DC51BF2BDB400B449D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2635DDE1BF2BDB400B449D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2635DDF1BF2BDB400B449D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2635DE11BF2BDB400B449D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-省市联动/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2635DE21BF2BDB400B449D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-省市联动/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2635DE41BF2BDB400B449D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "03-省市联动Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-省市联动.app/03-省市联动";
+			};
+			name = Debug;
+		};
+		E2635DE51BF2BDB400B449D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "03-省市联动Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-省市联动.app/03-省市联动";
+			};
+			name = Release;
+		};
+		E2635DE71BF2BDB400B449D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "03-省市联动UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-省市联动";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E2635DE81BF2BDB400B449D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "03-省市联动UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-3-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "03-省市联动";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2635DAE1BF2BDB400B449D0 /* Build configuration list for PBXProject "03-省市联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2635DDE1BF2BDB400B449D0 /* Debug */,
+				E2635DDF1BF2BDB400B449D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2635DE01BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2635DE11BF2BDB400B449D0 /* Debug */,
+				E2635DE21BF2BDB400B449D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2635DE31BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2635DE41BF2BDB400B449D0 /* Debug */,
+				E2635DE51BF2BDB400B449D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2635DE61BF2BDB400B449D0 /* Build configuration list for PBXNativeTarget "03-省市联动UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2635DE71BF2BDB400B449D0 /* Debug */,
+				E2635DE81BF2BDB400B449D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2635DAB1BF2BDB400B449D0 /* Project object */;
+}
