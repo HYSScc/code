@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E25531DB1BFD65A700B517AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25531DA1BFD65A700B517AE /* main.m */; };
+		E25531DE1BFD65A700B517AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E25531DD1BFD65A700B517AE /* AppDelegate.m */; };
+		E25531E11BFD65A700B517AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25531E01BFD65A700B517AE /* ViewController.m */; };
+		E25531E41BFD65A700B517AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25531E21BFD65A700B517AE /* Main.storyboard */; };
+		E25531E61BFD65A700B517AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25531E51BFD65A700B517AE /* Assets.xcassets */; };
+		E25531E91BFD65A700B517AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25531E71BFD65A700B517AE /* LaunchScreen.storyboard */; };
+		E25531F41BFD65A700B517AE /* _6____________01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25531F31BFD65A700B517AE /* _6____________01Tests.m */; };
+		E25531FF1BFD65A700B517AE /* _6____________01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25531FE1BFD65A700B517AE /* _6____________01UITests.m */; };
+		E255320F1BFD66BA00B517AE /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E255320E1BFD66BA00B517AE /* DrawViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E25531F01BFD65A700B517AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25531CE1BFD65A700B517AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25531D51BFD65A700B517AE;
+			remoteInfo = "06-抽屉效果-复杂滑动效果01";
+		};
+		E25531FB1BFD65A700B517AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25531CE1BFD65A700B517AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25531D51BFD65A700B517AE;
+			remoteInfo = "06-抽屉效果-复杂滑动效果01";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E25531D61BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-抽屉效果-复杂滑动效果01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25531DA1BFD65A700B517AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25531DC1BFD65A700B517AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E25531DD1BFD65A700B517AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E25531DF1BFD65A700B517AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E25531E01BFD65A700B517AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E25531E31BFD65A700B517AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E25531E51BFD65A700B517AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E25531E81BFD65A700B517AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E25531EA1BFD65A700B517AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25531EF1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "06-抽屉效果-复杂滑动效果01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25531F31BFD65A700B517AE /* _6____________01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6____________01Tests.m"; sourceTree = "<group>"; };
+		E25531F51BFD65A700B517AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25531FA1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "06-抽屉效果-复杂滑动效果01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25531FE1BFD65A700B517AE /* _6____________01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6____________01UITests.m"; sourceTree = "<group>"; };
+		E25532001BFD65A700B517AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E255320D1BFD66BA00B517AE /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		E255320E1BFD66BA00B517AE /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25531D31BFD65A700B517AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531EC1BFD65A700B517AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531F71BFD65A700B517AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E25531CD1BFD65A700B517AE = {
+			isa = PBXGroup;
+			children = (
+				E25531D81BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */,
+				E25531F21BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests */,
+				E25531FD1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests */,
+				E25531D71BFD65A700B517AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E25531D71BFD65A700B517AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25531D61BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01.app */,
+				E25531EF1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests.xctest */,
+				E25531FA1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25531D81BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */ = {
+			isa = PBXGroup;
+			children = (
+				E255320C1BFD667D00B517AE /* View */,
+				E25531DC1BFD65A700B517AE /* AppDelegate.h */,
+				E25531DD1BFD65A700B517AE /* AppDelegate.m */,
+				E25531DF1BFD65A700B517AE /* ViewController.h */,
+				E25531E01BFD65A700B517AE /* ViewController.m */,
+				E255320D1BFD66BA00B517AE /* DrawViewController.h */,
+				E255320E1BFD66BA00B517AE /* DrawViewController.m */,
+				E25531D91BFD65A700B517AE /* Supporting Files */,
+			);
+			path = "06-抽屉效果-复杂滑动效果01";
+			sourceTree = "<group>";
+		};
+		E25531D91BFD65A700B517AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E25531E21BFD65A700B517AE /* Main.storyboard */,
+				E25531E51BFD65A700B517AE /* Assets.xcassets */,
+				E25531E71BFD65A700B517AE /* LaunchScreen.storyboard */,
+				E25531EA1BFD65A700B517AE /* Info.plist */,
+				E25531DA1BFD65A700B517AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E25531F21BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E25531F31BFD65A700B517AE /* _6____________01Tests.m */,
+				E25531F51BFD65A700B517AE /* Info.plist */,
+			);
+			path = "06-抽屉效果-复杂滑动效果01Tests";
+			sourceTree = "<group>";
+		};
+		E25531FD1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E25531FE1BFD65A700B517AE /* _6____________01UITests.m */,
+				E25532001BFD65A700B517AE /* Info.plist */,
+			);
+			path = "06-抽屉效果-复杂滑动效果01UITests";
+			sourceTree = "<group>";
+		};
+		E255320C1BFD667D00B517AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25531D51BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25532031BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01" */;
+			buildPhases = (
+				E25531D21BFD65A700B517AE /* Sources */,
+				E25531D31BFD65A700B517AE /* Frameworks */,
+				E25531D41BFD65A700B517AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-抽屉效果-复杂滑动效果01";
+			productName = "06-抽屉效果-复杂滑动效果01";
+			productReference = E25531D61BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25531EE1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25532061BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01Tests" */;
+			buildPhases = (
+				E25531EB1BFD65A700B517AE /* Sources */,
+				E25531EC1BFD65A700B517AE /* Frameworks */,
+				E25531ED1BFD65A700B517AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25531F11BFD65A700B517AE /* PBXTargetDependency */,
+			);
+			name = "06-抽屉效果-复杂滑动效果01Tests";
+			productName = "06-抽屉效果-复杂滑动效果01Tests";
+			productReference = E25531EF1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E25531F91BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25532091BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01UITests" */;
+			buildPhases = (
+				E25531F61BFD65A700B517AE /* Sources */,
+				E25531F71BFD65A700B517AE /* Frameworks */,
+				E25531F81BFD65A700B517AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25531FC1BFD65A700B517AE /* PBXTargetDependency */,
+			);
+			name = "06-抽屉效果-复杂滑动效果01UITests";
+			productName = "06-抽屉效果-复杂滑动效果01UITests";
+			productReference = E25531FA1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25531CE1BFD65A700B517AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "tom-pc";
+				TargetAttributes = {
+					E25531D51BFD65A700B517AE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E25531EE1BFD65A700B517AE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E25531D51BFD65A700B517AE;
+					};
+					E25531F91BFD65A700B517AE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E25531D51BFD65A700B517AE;
+					};
+				};
+			};
+			buildConfigurationList = E25531D11BFD65A700B517AE /* Build configuration list for PBXProject "06-抽屉效果-复杂滑动效果01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E25531CD1BFD65A700B517AE;
+			productRefGroup = E25531D71BFD65A700B517AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25531D51BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */,
+				E25531EE1BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01Tests */,
+				E25531F91BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25531D41BFD65A700B517AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25531E91BFD65A700B517AE /* LaunchScreen.storyboard in Resources */,
+				E25531E61BFD65A700B517AE /* Assets.xcassets in Resources */,
+				E25531E41BFD65A700B517AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531ED1BFD65A700B517AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531F81BFD65A700B517AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25531D21BFD65A700B517AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E255320F1BFD66BA00B517AE /* DrawViewController.m in Sources */,
+				E25531E11BFD65A700B517AE /* ViewController.m in Sources */,
+				E25531DE1BFD65A700B517AE /* AppDelegate.m in Sources */,
+				E25531DB1BFD65A700B517AE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531EB1BFD65A700B517AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25531F41BFD65A700B517AE /* _6____________01Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25531F61BFD65A700B517AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25531FF1BFD65A700B517AE /* _6____________01UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E25531F11BFD65A700B517AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25531D51BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */;
+			targetProxy = E25531F01BFD65A700B517AE /* PBXContainerItemProxy */;
+		};
+		E25531FC1BFD65A700B517AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25531D51BFD65A700B517AE /* 06-抽屉效果-复杂滑动效果01 */;
+			targetProxy = E25531FB1BFD65A700B517AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E25531E21BFD65A700B517AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25531E31BFD65A700B517AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E25531E71BFD65A700B517AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25531E81BFD65A700B517AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E25532011BFD65A700B517AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E25532021BFD65A700B517AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E25532041BFD65A700B517AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E25532051BFD65A700B517AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E25532071BFD65A700B517AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/06-抽屉效果-复杂滑动效果01.app/06-抽屉效果-复杂滑动效果01";
+			};
+			name = Debug;
+		};
+		E25532081BFD65A700B517AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/06-抽屉效果-复杂滑动效果01.app/06-抽屉效果-复杂滑动效果01";
+			};
+			name = Release;
+		};
+		E255320A1BFD65A700B517AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "06-抽屉效果-复杂滑动效果01";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E255320B1BFD65A700B517AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "06-抽屉效果-复杂滑动效果01UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-6------------01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "06-抽屉效果-复杂滑动效果01";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25531D11BFD65A700B517AE /* Build configuration list for PBXProject "06-抽屉效果-复杂滑动效果01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25532011BFD65A700B517AE /* Debug */,
+				E25532021BFD65A700B517AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25532031BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25532041BFD65A700B517AE /* Debug */,
+				E25532051BFD65A700B517AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E25532061BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25532071BFD65A700B517AE /* Debug */,
+				E25532081BFD65A700B517AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E25532091BFD65A700B517AE /* Build configuration list for PBXNativeTarget "06-抽屉效果-复杂滑动效果01UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E255320A1BFD65A700B517AE /* Debug */,
+				E255320B1BFD65A700B517AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E25531CE1BFD65A700B517AE /* Project object */;
+}
