@@ -16,6 +16,7 @@
 		E2F252521C00561C00824F46 /* _5____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F252511C00561C00824F46 /* _5____Tests.m */; };
 		E2F2525D1C00561C00824F46 /* _5____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F2525C1C00561C00824F46 /* _5____UITests.m */; };
 		E2F2526D1C00574600824F46 /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F2526C1C00574600824F46 /* BarView.m */; settings = {ASSET_TAGS = (); }; };
+		E2F254401C019B9F00824F46 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F2543F1C019B9F00824F46 /* UIColor+RandomColor.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E2F2525E1C00561C00824F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2F2526B1C00574600824F46 /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
 		E2F2526C1C00574600824F46 /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
+		E2F2543E1C019B9F00824F46 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		E2F2543F1C019B9F00824F46 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				E2F2523B1C00561C00824F46 /* AppDelegate.m */,
 				E2F2523D1C00561C00824F46 /* ViewController.h */,
 				E2F2523E1C00561C00824F46 /* ViewController.m */,
+				E2F2543E1C019B9F00824F46 /* UIColor+RandomColor.h */,
+				E2F2543F1C019B9F00824F46 /* UIColor+RandomColor.m */,
 				E2F252371C00561C00824F46 /* Supporting Files */,
 			);
 			path = "05-柱状图";
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F2526D1C00574600824F46 /* BarView.m in Sources */,
+				E2F254401C019B9F00824F46 /* UIColor+RandomColor.m in Sources */,
 				E2F2523F1C00561C00824F46 /* ViewController.m in Sources */,
 				E2F2523C1C00561C00824F46 /* AppDelegate.m in Sources */,
 				E2F252391C00561C00824F46 /* main.m in Sources */,
@@ -510,6 +516,7 @@
 				E2F252631C00561C00824F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F252641C00561C00824F46 /* Build configuration list for PBXNativeTarget "05-柱状图Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				E2F252661C00561C00824F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F252671C00561C00824F46 /* Build configuration list for PBXNativeTarget "05-柱状图UITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				E2F252691C00561C00824F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

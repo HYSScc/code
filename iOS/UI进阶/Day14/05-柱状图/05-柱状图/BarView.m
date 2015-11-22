@@ -7,26 +7,27 @@
 //
 
 #import "BarView.h"
+#import "UIColor+RandomColor.h"
 
 @implementation BarView
 
-- (UIColor *)randomColor
-{
-    /**
-     颜色有两种表现形式 RGB RGA
-     RGB 24
-     R,G,B每个颜色通道8位
-     8的二进制取值范围 255
-     R,G,B每个颜色取值 0 ~ 255
-     
-     120 / 255.0
-     */
-    CGFloat r = arc4random_uniform(256) / 255.0;
-    CGFloat g = arc4random_uniform(256) / 255.0;
-    CGFloat b = arc4random_uniform(256) / 255.0;
-    
-    return [UIColor colorWithRed:r green:g blue:b alpha:1];
-}
+//- (UIColor *)randomColor
+//{
+//    /**
+//     颜色有两种表现形式 RGB RGA
+//     RGB 24
+//     R,G,B每个颜色通道8位
+//     8的二进制取值范围 255
+//     R,G,B每个颜色取值 0 ~ 255
+//     
+//     120 / 255.0
+//     */
+//    CGFloat r = arc4random_uniform(256) / 255.0;
+//    CGFloat g = arc4random_uniform(256) / 255.0;
+//    CGFloat b = arc4random_uniform(256) / 255.0;
+//    
+//    return [UIColor colorWithRed:r green:g blue:b alpha:1];
+//}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -55,7 +56,7 @@
         
         // 3.添加路径到上下文
         CGContextAddPath(ctx, path.CGPath);
-        [[self randomColor] setFill];
+        [[UIColor randomColor] setFill];
         
         // 4.渲染
         CGContextFillPath(ctx);
