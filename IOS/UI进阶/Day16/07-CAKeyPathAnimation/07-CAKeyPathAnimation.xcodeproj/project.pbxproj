@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2CB58831C06D589000E90EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB58821C06D589000E90EB /* main.m */; };
+		E2CB58861C06D589000E90EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB58851C06D589000E90EB /* AppDelegate.m */; };
+		E2CB58891C06D589000E90EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB58881C06D589000E90EB /* ViewController.m */; };
+		E2CB588C1C06D589000E90EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CB588A1C06D589000E90EB /* Main.storyboard */; };
+		E2CB588E1C06D589000E90EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CB588D1C06D589000E90EB /* Assets.xcassets */; };
+		E2CB58911C06D589000E90EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CB588F1C06D589000E90EB /* LaunchScreen.storyboard */; };
+		E2CB589C1C06D589000E90EB /* _7_CAKeyPathAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB589B1C06D589000E90EB /* _7_CAKeyPathAnimationTests.m */; };
+		E2CB58A71C06D589000E90EB /* _7_CAKeyPathAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB58A61C06D589000E90EB /* _7_CAKeyPathAnimationUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2CB58981C06D589000E90EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CB58761C06D589000E90EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CB587D1C06D589000E90EB;
+			remoteInfo = "07-CAKeyPathAnimation";
+		};
+		E2CB58A31C06D589000E90EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CB58761C06D589000E90EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CB587D1C06D589000E90EB;
+			remoteInfo = "07-CAKeyPathAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2CB587E1C06D589000E90EB /* 07-CAKeyPathAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-CAKeyPathAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CB58821C06D589000E90EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2CB58841C06D589000E90EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2CB58851C06D589000E90EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2CB58871C06D589000E90EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2CB58881C06D589000E90EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2CB588B1C06D589000E90EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2CB588D1C06D589000E90EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2CB58901C06D589000E90EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2CB58921C06D589000E90EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CB58971C06D589000E90EB /* 07-CAKeyPathAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "07-CAKeyPathAnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CB589B1C06D589000E90EB /* _7_CAKeyPathAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _7_CAKeyPathAnimationTests.m; sourceTree = "<group>"; };
+		E2CB589D1C06D589000E90EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CB58A21C06D589000E90EB /* 07-CAKeyPathAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "07-CAKeyPathAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CB58A61C06D589000E90EB /* _7_CAKeyPathAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _7_CAKeyPathAnimationUITests.m; sourceTree = "<group>"; };
+		E2CB58A81C06D589000E90EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2CB587B1C06D589000E90EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB58941C06D589000E90EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB589F1C06D589000E90EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2CB58751C06D589000E90EB = {
+			isa = PBXGroup;
+			children = (
+				E2CB58801C06D589000E90EB /* 07-CAKeyPathAnimation */,
+				E2CB589A1C06D589000E90EB /* 07-CAKeyPathAnimationTests */,
+				E2CB58A51C06D589000E90EB /* 07-CAKeyPathAnimationUITests */,
+				E2CB587F1C06D589000E90EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2CB587F1C06D589000E90EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB587E1C06D589000E90EB /* 07-CAKeyPathAnimation.app */,
+				E2CB58971C06D589000E90EB /* 07-CAKeyPathAnimationTests.xctest */,
+				E2CB58A21C06D589000E90EB /* 07-CAKeyPathAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2CB58801C06D589000E90EB /* 07-CAKeyPathAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB58841C06D589000E90EB /* AppDelegate.h */,
+				E2CB58851C06D589000E90EB /* AppDelegate.m */,
+				E2CB58871C06D589000E90EB /* ViewController.h */,
+				E2CB58881C06D589000E90EB /* ViewController.m */,
+				E2CB588A1C06D589000E90EB /* Main.storyboard */,
+				E2CB588D1C06D589000E90EB /* Assets.xcassets */,
+				E2CB588F1C06D589000E90EB /* LaunchScreen.storyboard */,
+				E2CB58921C06D589000E90EB /* Info.plist */,
+				E2CB58811C06D589000E90EB /* Supporting Files */,
+			);
+			path = "07-CAKeyPathAnimation";
+			sourceTree = "<group>";
+		};
+		E2CB58811C06D589000E90EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB58821C06D589000E90EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CB589A1C06D589000E90EB /* 07-CAKeyPathAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB589B1C06D589000E90EB /* _7_CAKeyPathAnimationTests.m */,
+				E2CB589D1C06D589000E90EB /* Info.plist */,
+			);
+			path = "07-CAKeyPathAnimationTests";
+			sourceTree = "<group>";
+		};
+		E2CB58A51C06D589000E90EB /* 07-CAKeyPathAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB58A61C06D589000E90EB /* _7_CAKeyPathAnimationUITests.m */,
+				E2CB58A81C06D589000E90EB /* Info.plist */,
+			);
+			path = "07-CAKeyPathAnimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2CB587D1C06D589000E90EB /* 07-CAKeyPathAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CB58AB1C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimation" */;
+			buildPhases = (
+				E2CB587A1C06D589000E90EB /* Sources */,
+				E2CB587B1C06D589000E90EB /* Frameworks */,
+				E2CB587C1C06D589000E90EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-CAKeyPathAnimation";
+			productName = "07-CAKeyPathAnimation";
+			productReference = E2CB587E1C06D589000E90EB /* 07-CAKeyPathAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2CB58961C06D589000E90EB /* 07-CAKeyPathAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CB58AE1C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimationTests" */;
+			buildPhases = (
+				E2CB58931C06D589000E90EB /* Sources */,
+				E2CB58941C06D589000E90EB /* Frameworks */,
+				E2CB58951C06D589000E90EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CB58991C06D589000E90EB /* PBXTargetDependency */,
+			);
+			name = "07-CAKeyPathAnimationTests";
+			productName = "07-CAKeyPathAnimationTests";
+			productReference = E2CB58971C06D589000E90EB /* 07-CAKeyPathAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2CB58A11C06D589000E90EB /* 07-CAKeyPathAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CB58B11C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimationUITests" */;
+			buildPhases = (
+				E2CB589E1C06D589000E90EB /* Sources */,
+				E2CB589F1C06D589000E90EB /* Frameworks */,
+				E2CB58A01C06D589000E90EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CB58A41C06D589000E90EB /* PBXTargetDependency */,
+			);
+			name = "07-CAKeyPathAnimationUITests";
+			productName = "07-CAKeyPathAnimationUITests";
+			productReference = E2CB58A21C06D589000E90EB /* 07-CAKeyPathAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2CB58761C06D589000E90EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "tom-pc";
+				TargetAttributes = {
+					E2CB587D1C06D589000E90EB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E2CB58961C06D589000E90EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E2CB587D1C06D589000E90EB;
+					};
+					E2CB58A11C06D589000E90EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E2CB587D1C06D589000E90EB;
+					};
+				};
+			};
+			buildConfigurationList = E2CB58791C06D589000E90EB /* Build configuration list for PBXProject "07-CAKeyPathAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2CB58751C06D589000E90EB;
+			productRefGroup = E2CB587F1C06D589000E90EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2CB587D1C06D589000E90EB /* 07-CAKeyPathAnimation */,
+				E2CB58961C06D589000E90EB /* 07-CAKeyPathAnimationTests */,
+				E2CB58A11C06D589000E90EB /* 07-CAKeyPathAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2CB587C1C06D589000E90EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CB58911C06D589000E90EB /* LaunchScreen.storyboard in Resources */,
+				E2CB588E1C06D589000E90EB /* Assets.xcassets in Resources */,
+				E2CB588C1C06D589000E90EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB58951C06D589000E90EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB58A01C06D589000E90EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2CB587A1C06D589000E90EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CB58891C06D589000E90EB /* ViewController.m in Sources */,
+				E2CB58861C06D589000E90EB /* AppDelegate.m in Sources */,
+				E2CB58831C06D589000E90EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB58931C06D589000E90EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CB589C1C06D589000E90EB /* _7_CAKeyPathAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CB589E1C06D589000E90EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CB58A71C06D589000E90EB /* _7_CAKeyPathAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2CB58991C06D589000E90EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CB587D1C06D589000E90EB /* 07-CAKeyPathAnimation */;
+			targetProxy = E2CB58981C06D589000E90EB /* PBXContainerItemProxy */;
+		};
+		E2CB58A41C06D589000E90EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CB587D1C06D589000E90EB /* 07-CAKeyPathAnimation */;
+			targetProxy = E2CB58A31C06D589000E90EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2CB588A1C06D589000E90EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CB588B1C06D589000E90EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2CB588F1C06D589000E90EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CB58901C06D589000E90EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2CB58A91C06D589000E90EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2CB58AA1C06D589000E90EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2CB58AC1C06D589000E90EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07-CAKeyPathAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2CB58AD1C06D589000E90EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07-CAKeyPathAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2CB58AF1C06D589000E90EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "07-CAKeyPathAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/07-CAKeyPathAnimation.app/07-CAKeyPathAnimation";
+			};
+			name = Debug;
+		};
+		E2CB58B01C06D589000E90EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "07-CAKeyPathAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/07-CAKeyPathAnimation.app/07-CAKeyPathAnimation";
+			};
+			name = Release;
+		};
+		E2CB58B21C06D589000E90EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "07-CAKeyPathAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "07-CAKeyPathAnimation";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E2CB58B31C06D589000E90EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "07-CAKeyPathAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-7-CAKeyPathAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "07-CAKeyPathAnimation";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2CB58791C06D589000E90EB /* Build configuration list for PBXProject "07-CAKeyPathAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CB58A91C06D589000E90EB /* Debug */,
+				E2CB58AA1C06D589000E90EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CB58AB1C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CB58AC1C06D589000E90EB /* Debug */,
+				E2CB58AD1C06D589000E90EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CB58AE1C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CB58AF1C06D589000E90EB /* Debug */,
+				E2CB58B01C06D589000E90EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CB58B11C06D589000E90EB /* Build configuration list for PBXNativeTarget "07-CAKeyPathAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CB58B21C06D589000E90EB /* Debug */,
+				E2CB58B31C06D589000E90EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2CB58761C06D589000E90EB /* Project object */;
+}
