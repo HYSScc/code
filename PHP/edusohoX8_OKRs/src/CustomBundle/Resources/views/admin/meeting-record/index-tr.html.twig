@@ -1,0 +1,26 @@
+<tr>
+  <td>{{ meetingRecord.id |default() }}</td>
+  <td>{{ meetingRecord.name|default('') }}</td>
+  <td>{{ meetingRooms[meetingRecord.meetingRoomId]['name']|default() }}</td>
+  <td>{{ organizers[meetingRecord.organizerId]['nickname']|default('无') }}</td>
+
+  <td>
+    <span class="text-sm">
+      开始：{{ meetingRecord.startTime|date_format }}
+    </span>
+    <br>
+    <span class="text-sm">
+      结束：{{ meetingRecord.endTime|date_format }}
+    </span>
+  </td>
+  {% if meetingRecord.startTime >= date('now').timestamp %}
+    <td>
+      <button class="btn btn-default btn-sm btn-meeting-record-update" data-name="编辑" data-url="{{ path('admin_meeting_record_update',{id:meetingRecord.id|default(0)}) }}" data-toggle="modal" data-target="#modal">
+          {{'编辑'|trans }}
+      </button>
+      <button class="btn btn-default btn-sm btn-meeting-record-delete" data-url="{{ path('admin_meeting_record_delete',{id:meetingRecord.id|default(0)}) }}">{{'删除'|trans}}</button>
+    </td>
+  {% else %}
+    <td>已结束 </td>
+  {% endif %}
+</tr>

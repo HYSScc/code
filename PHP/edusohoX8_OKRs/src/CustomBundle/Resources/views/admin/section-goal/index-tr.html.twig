@@ -1,0 +1,31 @@
+<tr>
+<td>{{ sectionGoal.id }}</td>
+<td>{{ sectionGoal.year }}</td>
+<td>{{ sectionGoal.name }}</td>
+<td class="text-sm">{{ sectionGoal.startTime|date_format }}</td>
+<td class="text-sm">{{ sectionGoal.confirmEndTime|date_format }}</td>
+<td>
+  <span class="text-sm">
+    开始：{{ sectionGoal.adjustStartTime|date_format }}
+  </span>
+  <br>
+  <span class="text-sm">
+  结束：{{ sectionGoal.adjustEndTime|date_format }}
+  </span>
+</td>
+  <td>
+  <span class="text-sm">
+    自评：{{ sectionGoal.selfRatingEndTime|date_format }}
+  </span>
+    <br>
+  <span class="text-sm">
+   他评：{{ sectionGoal.othersRatingEndTime|date_format }}
+  </span>
+  </td>
+<td>
+  <button class="btn btn-default btn-sm btn-section-goal-update" data-name="编辑" data-url="{{ path('admin_section_goal_update',{id:sectionGoal.id}) }}" data-toggle="modal" data-target="#modal">
+     {{'编辑'|trans}}
+  </button>
+  <button class="btn btn-default btn-sm btn-section-goal-delete" data-url="{{ path('admin_section_goal_delete',{id:sectionGoal.id}) }}">{{'删除'|trans}}</button>
+</td>
+</tr>

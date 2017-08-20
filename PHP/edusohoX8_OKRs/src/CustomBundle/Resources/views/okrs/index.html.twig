@@ -1,0 +1,7 @@
+{% extends '@Custom/okrs/layout.html.twig' %}
+{% set pageNav = 'okrs' %}
+{% block main %}
+<div>
+	<a href="okrs/index" data-url="{{ path('user_okrs', {id:user.id}) }}" ><button class="btn btn-block">我的okrs</button></a>
+	<a href="listuserokrs" data-url="{{ path('list_user_okrs', {id:user.id}) }}" ><button class="btn btn-block">查看全部用户</button></a>
+{% endblock %}

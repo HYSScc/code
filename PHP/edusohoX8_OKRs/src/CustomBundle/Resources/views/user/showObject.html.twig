@@ -1,0 +1,80 @@
+{% extends '@Custom/okrs/layout.html.twig' %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+{% do script(['custombundle/js/object/index.js']) %}
+
+{% set pageNav = 'okrs' %}
+
+{% block main %}
+    <form class="form-inline" action="{{ path('user_selectSectionGoal', {id:user.id})}}" method="get">
+        <div class="form-group">
+            <label for="exampleInputName2">阶段目标</label>
+            <select name="year" class="form-control">
+                <option value={{ "now"|date('Y') }} >今年</option>
+                <option value={{ "now"|date('Y') + 1 }}>明年</option>
+            </select>
+            <button class="btn btn-primary">{{'搜索'|trans}}</button>
+        </div>
+    </form>
+
+    {%  if result is defined %}
+        <table class="table" style="margin-top: 20px">
+            <thead>
+                <tr>
+                    <td>年份</td>
+                    <td>阶段目标</td>
+                    <td>开始时间</td>
+                    <td>结束时间</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody class="tablebody">
+                {% for sectiongoal in result %}
+                    <tr>
+                        <td>
+                            <button class="btn btn-default btn-xs" name="listGoal{{sectiongoal.id}}" id="showGoals" data-name={{sectiongoal.id}}>
+                                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn btn-default btn-xs" name="delGoal{{sectiongoal.id}}" id="collapseGoals" style="display: none;" data-name={{sectiongoal.id}}>
+                                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                            </button>
+                            {{sectiongoal.year}}
+                        </td>
+                        <td>{{sectiongoal.name}}</td>
+                        <td>{{sectiongoal.startTime|date('Y-n-d H:i')}}</td>
+                        <td>{{sectiongoal.confirmEndTime|date('Y-n-d H:i')}}</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" id="addGoals"  data-name={{sectiongoal.id}} data-toggle="modal" data-target="#addgoal">{{'添加'|trans}}</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr style="display: none;" class="goals">
+                    <td>
+                        <button class="btn btn-default btn-xs" id="showKR" name="" data-name="">
+                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn-default btn-xs" id="collapseKR" name="" data-name="">
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                    <td colspan='3' id="goal"></td>
+                    <td>
+                        <button id='addKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#addOKRs' data-name="" data-sectiongoal="">{{'添加'|trans}}</button>
+                        <button id='editGoal' class='btn btn-default btn-sm' data-toggle='modal' data-target='#editGoals' data-name="" data-sectiongoal="">{{'编辑'|trans}}</button>
+                        <button id='adjustaddOKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#adjustAdd' data-name="" data-sectiongoal="">{{'调整添加'|trans}}</button>
+                    </td>
+                </tr>
+                <tr style="display: none"  class="krs">
+                    <td></td>
+                    <td colspan='3' id="kr"></td>
+                    <td>
+                        <button id='editKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#editKRs' data-name="" data-sectiongoal="">{{'编辑'|trans}}</button>
+                        <button id='adjusteditOKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#adjustEdit' data-name="" data-sectiongoal="">{{'调整编辑'|trans}}</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+        {% include '@Custom/user/OKRsModal.html.twig' %}
+{% endblock %}

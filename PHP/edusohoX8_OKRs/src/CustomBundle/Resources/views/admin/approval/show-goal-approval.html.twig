@@ -1,0 +1,97 @@
+{% extends 'old-bootstrap-modal-layout.html.twig' %}
+
+{% block title %}{{'目标更改信息'|trans}}{% endblock %}
+
+{% block body %}
+
+<table class="table table-striped table-condenseda table-bordered">
+  <tr>
+    <th width="20%">{{'修改'|trans}}</th>
+  </tr>
+  <tr>
+  <th width="20%">{{'id'|trans}}</th>
+  <th width="40%">{{'原KR'|trans}}</th>
+  <th width="40%">{{'新KR'|trans}}</th>
+  </tr>
+  {% if updateInfo|default %}
+    {% for info in updateInfo %}
+      <tr>
+        <td>
+        {{ info.id }}
+        </td>
+        <td>
+        {{ info.name }}
+        </td>
+        <td>
+        {{ info.newName }}
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+      <td colspan="20">
+        <div class="empty">{{ '无修改要求'|trans }}</div>
+      </td>
+    {% endif %}
+  </tr>
+</table>
+
+<table class="table table-striped table-condenseda table-bordered">
+  <tr>
+    <th width="20%">{{'新增'|trans}}</th>
+    <th width="80%">{{'新值'|trans}}</th>
+  </tr>
+  {% if addInfo|default %}
+    {% for info in addInfo %}
+      <tr>
+        <td>
+        </td>
+        <td>
+        {{ info.name }}
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+      <td colspan="20">
+        <div class="empty">{{ '无新增要求'|trans }}</div>
+      </td>
+    {% endif %}
+  </tr>
+</table>
+
+<table class="table table-striped table-condenseda table-bordered">
+  <tr>
+    <th width="20%">{{'删除'|trans}}</th>
+    <th width="80%">{{'内容'|trans}}</th>
+  </tr>
+  {% if deleteInfo|default %}
+    {% for info in deleteInfo %}
+      <tr>
+        <td>
+        </td>
+        <td>
+        {{ info.name }}
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+      <td colspan="20">
+        <div class="empty">{{ '无删除要求'|trans }}</div>
+      </td>
+    {% endif %}
+  </tr>
+</table>
+{% if history.rejectReason != '' %}
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="rejectReason">{{ '驳回原因'|trans }}</label>
+    <div class="col-md-8 controls">
+      <textarea class="form-control" id="rejectReason" style="height:100px;"
+        name="rejectReason" readonly =true>{{ history.rejectReason |default('') }}</textarea>
+    </div>
+  </div>
+{% endif %}
+
+{% endblock %}
+
+{% block footer %}
+  <button type="button" class="btn btn-primary" data-dismiss="modal">{{'关闭'|trans}}</button>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends '@Custom/okrs/layout.html.twig' %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+{% do script(['custombundle/js/object/index.js']) %}
+
+{% set pageNav = 'okrs' %}
+
+{% block main %}
+  <form class="form-inline" action="{{ path('user_selectSectionGoal', {id:user.id}) }}" method="get">
+    <div class="form-group">
+      <label for="exampleInputName2">阶段目标</label>
+      <select name="year" class="form-control">
+        <option value={{ "now"|date('Y') }}>今年</option>
+        <option value={{ "now"|date('Y') + 1 }}>明年</option>
+      </select>
+      <button class="btn btn-primary">{{ '搜索'|trans }}</button>
+    </div>
+  </form>
+
+  {% if result is defined %}
+    <table class="table" style="margin-top: 20px">
+      <thead>
+      <tr>
+        <td>年份</td>
+        <td>阶段目标</td>
+        <td>开始时间</td>
+        <td>结束时间</td>
+        <td>子目标</td>
+      </tr>
+      </thead>
+      <tbody class="tablebody">
+      {% for object in result %}
+        <tr>
+          <td>{{ object.sectionGoal.year }}</td>
+          <td>{{ object.sectionGoal.name }}</td>
+          <td>{{ object.sectionGoal.startTime|date('Y-n-d H:i') }}</td>
+          <td>{{ object.sectionGoal.confirmEndTime|date('Y-n-d H:i') }}</td>
+          <td>
+            {% set i = 0 %}
+            {% for goal in object.goals %}
+              {% set i = i + 1 %}
+              <p>
+                <a href="javascript:;" id="showKR" data-url="{{ path('user_selectKRs', {id:user.id, goalId:goal.id}) }}"
+                   data-name="{{ goal.id }}">
+                  {{ i }}.{{ goal.name }}</a>
+              </p>
+            {% endfor %}
+          </td>
+          <td>
+            <a class="btn btn-default btn-md" id="addGoals" data-url="{{ path('user_addGoal', {id:user.id, sectionGoalId:object.sectionGoal.id}) }}" data-name={{ object.sectionGoal.id }} data-toggle="modal"
+               data-target="#modal">
+              <i class="glyphicon glyphicon-plus"></i>{{ '添加目标'|trans }}</a>
+          </td>
+        </tr>
+      {% endfor %}
+      <tr style="display: none;background: #E8E8E8;" class="goalButton" id="">
+        <td colspan='4' id="goalMessage"></td>
+        <td colspan='2'>
+          <a id='addKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal' data-name="" data-url="">
+            <i class="glyphicon glyphicon-plus"></i>{{ '添加'|trans }}</a>
+          <a id='editGoal' class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal' data-name="" data-url="">
+            <i class="glyphicon glyphicon-edit"></i>{{ '编辑'|trans }}</a>
+          <a id='adjustaddOKR' class='btn btn-default btn-sm' data-name="" data-sectiongoal="">  
+            <i class="glyphicon glyphicon-adjust"></i>{{'调整添加'|trans}}</a>
+        </td>
+      </tr>
+      <tr style="display: none" class="krs" id="">
+        <td colspan='4' id="kr"></td>
+        <td colspan='2'>
+          <a id='editKR' class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal' data-name="" data-url="">
+            <i class="glyphicon glyphicon-edit"></i>{{ '编辑'|trans }}</a>
+          <a id='adjusteditOKR' class='btn btn-default btn-sm' data-target='#adjustEdit' data-name="" date-value="" data-sectiongoal="">    
+            <i class="glyphicon glyphicon-adjust"></i>{{'调整编辑'|trans}}</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  {% endif %}
+  {% include '@Custom/krs-manage/OKRsModal.html.twig' %}
+{% endblock %}

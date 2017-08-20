@@ -1,0 +1,27 @@
+<tr id="user-table-tr-{{ user.id }}" >
+  {% include 'org/parts/table-body-checkbox.html.twig' %}
+  <td>
+    {{ object.sectionGoal }}
+  </td>
+ {% include 'org/parts/table-body-td.html.twig' %}
+  <td>
+    {{ object.userInfo.employeeId }}
+  </td>
+  <td>
+    {{ object.userInfo.orgId }}
+  </td>
+  <td>
+    {{ object.postName }}
+  </td>
+  <td>
+    {% if object.goals is defined %}
+    {% for goal in object.goals %}
+      <p><a href="#modal" data-toggle="modal" data-url="{{ path('object_KRs', {goalId:goal.id,id:user.id}) }}" data-url="" data-usergoalkr="{{ goal.id }}">{{ goal.name }}</a></p>
+    {% endfor %}
+    {% endif %}
+    {% if object.goals is null %}
+      暂无目标
+    {% endif %}
+  </td>
+</tr>
+

@@ -1,0 +1,103 @@
+custom_homepage:
+    path:     /hello
+    defaults: { _controller: CustomBundle:Default:hello }
+
+object_KRs:
+     path: /user/{id}/Object/{goalId}/KRs
+     defaults: { _controller: CustomBundle:KeyResult/KeyResult:showKRs }
+
+okrs:
+    path:  /user/{id}/okrs
+    defaults: { _controller: CustomBundle:OKRs:index }
+
+user_okrs:
+    path:  /user/{id}/okrs/index
+    defaults: { _controller: CustomBundle:OKRs:showOkrs }
+
+user_addGoal:
+    path:  /user/{id}/okrs/addGoal
+    defaults: { _controller: CustomBundle:OKRs:addGoal }
+
+user_addKeyResults:
+    path:  /user/{id}/okrs/addKeyResults
+    defaults: { _controller: CustomBundle:OKRs:addKeyResults }
+
+user_selectSectionGoal:
+    path:  /user/{id}/okrs/selectSectionGoal
+    defaults: { _controller: CustomBundle:OKRs:selectSectionGoal }
+
+user_selectGoal:
+    path: /user/{id}/okrs/selectGoal
+    defaults: { _controller: CustomBundle:OKRs:selectGoal }
+
+user_selectKRs:
+    path: /user/{id}/okrs/selectKRs
+    defaults: { _controller: CustomBundle:OKRs:selectKRs }
+
+user_editGoal:
+    path: /user/{id}/okrs/editGoal
+    defaults: { _controller: CustomBundle:OKRs:editGoal }
+
+user_deleteGoal:
+    path: /user/{id}/okrs/deleteGoal
+    defaults: { _controller: CustomBundle:OKRs:deleteGoal }
+
+user_editKR:
+    path: /user/{id}/okrs/editKR
+    defaults: { _controller: CustomBundle:OKRs:editKR }
+
+user_deleteKR:
+    path: /user/{id}/okrs/deleteKR
+    defaults: { _controller: CustomBundle:OKRs:deleteKR }
+
+user_addKrToGoal:
+    path:  /user/{id}/okrs/addKrToGoal
+    defaults: { _controller: CustomBundle:OKRs:addKrToGoal }
+
+user_updateKrToGoal:
+    path: /user/{id}/okrs/updateKrToGoal
+    defaults: { _controller: CustomBundle:OKRs:updateKrToGoal }
+
+user_deleteKrToGoal:
+    path: /user/{id}/okrs/deleteKrToGoal
+    defaults: { _controller: CustomBundle:OKRs:deleteKrToGoal }
+
+admin_post_manage:
+    path:     /admin/post
+    defaults: { _controller: CustomBundle:Post:manage }
+
+list_user_okrs:
+    path:     /user/{id}/listuserokrs
+    defaults: { _controller: CustomBundle:Okrs/UserOkrs:show }
+
+find_search_boxinfo:
+    path:     /user/{id}/findsearchboxinfo
+    defaults: { _controller: CustomBundle:Okrs/UserOkrs:findSearchBoxInfo }
+
+show_my_meetingRoom_record:
+    path: /meetingRoom/records
+    defaults: { _controller: CustomBundle:MeetingRoom:showRecord }
+
+create_my_meetingRoom_record:
+    path: /meetingRoom/record/add
+    defaults: { _controller: CustomBundle:MeetingRoom:addRecord }
+
+update_my_meetingRoom_record:
+    path: /meetingRoom/record/{recordId}/update
+    defaults: { _controller: CustomBundle:MeetingRoom:updateRecord }
+
+delete_my_meetingRoom_record:
+    path: /meetingRoom/record/{recordId}/delete
+    defaults: { _controller: CustomBundle:MeetingRoom:deleteRecord}
+
+check_my_meetingRoom_record:
+    path: /meetingRoom/record/check
+    defaults: { _controller: CustomBundle:MeetingRoom:checkTime }
+
+meeting_room:
+    path: /meetingRoom
+    defaults: { _controller: CustomBundle:MeetingRoom:index}
+
+meeting_room_statistic:
+    path: /meetingRoom/statistic/{date}
+    defaults: { _controller: CustomBundle:MeetingRoom:statistic}

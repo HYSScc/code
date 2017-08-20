@@ -1,0 +1,43 @@
+{% extends 'old-bootstrap-modal-layout.html.twig' %}
+
+{% block title %}{{'岗位详细信息'|trans}}{% endblock %}
+
+{% block body %}
+
+<table class="table table-striped table-condenseda table-bordered">
+  <tr>
+    <th width="20%">{{'编码'|trans}}</th>
+    <td width="80%">
+      <a class="pull-right" href="{{ path('user_show', {id:post.id}) }}" target="_blank">{{'个人主页'|trans}}</a>
+      {{ post.code }}
+    </td>
+  </tr>
+
+  <tr>
+    <th width="20%">{{'岗位名'|trans}}</th>
+    <td width="80%">
+      {{ post.name }}
+    </td>
+  </tr>
+
+  <tr>
+    <th width="20%">{{'创建时间'|trans}}</th>
+    <td width="80%">
+      {{ post.createdTime|date('Y-n-d H:i') }}
+    </td>
+  </tr>
+
+  <tr>
+    <th width="20%">{{'更新时间'|trans}}</th>
+    <td width="80%">
+      {{ post.updatedTime|date('Y-n-d H:i') }}
+    </td>
+  </tr>
+
+</table>
+
+{% endblock %}
+
+{% block footer %}
+  <button type="button" class="btn btn-primary" data-dismiss="modal">{{'关闭'|trans}}</button>
+{% endblock %}

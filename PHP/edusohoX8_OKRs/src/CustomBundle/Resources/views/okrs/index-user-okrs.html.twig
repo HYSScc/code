@@ -1,0 +1,62 @@
+{% extends '@Custom/okrs/layout.html.twig' %}
+{% import 'admin/macro.html.twig' as admin_macro %}
+{% block title %}{{ parent() }}{% endblock %}
+{% do script(['custombundle/js/okrs/index.js']) %}
+{#{% do script(['app/js/okrs/index.js']) %}#}
+{% block main %}
+  {{ web_macro.flash_messages() }}
+  <form class="form-inline well well-sm" id="user-okrs-select" action="" method="get">
+    <div class="mbm">
+      <span class="divider"></span>
+      <div class="form-group">
+        <select id="isSelfRated" name="isSelfRated" class="form-control">
+            <option value="" selected="selected">okr状态</option>
+            <option value="1" >有okr</option>
+            <option value="0" >无okr</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control" name="orgId" id="orgId">
+            <option value="" selected="selected">--部门--</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control" name="postName" id="postName">
+            <option value="" selected="selected">--岗位--</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" id="keyword" name="keyword" class="form-control" value="{{ app.request.query.get('keyword') }}" placeholder="{{ '关键词'|trans }}">
+      </div>
+      <button class="btn btn-primary" id="okrsubmit" >搜索</button>
+    </div>
+  </form>
+  <table id="user-table" class="table table-striped table-hover" data-search-form="#user-search-form">
+    <thead>
+      <tr>
+        {% if setting('magic.enable_org','0') %}
+          <th><input type="checkbox"  data-role="batch-select"></th>
+        {% endif %}
+        <th>{{ '阶段任务名'|trans }}</th>
+        {% include 'org/parts/table-thead-tr.html.twig' %}
+        <th>{{ '工号'|trans }}</th>
+        <th>{{ '部门'|trans }}</th>
+        <th>{{ '岗位'|trans }}</th>
+        <th width="20%">{{ '子目标'|trans }}</th>
+      </tr>
+    </thead>
+      <p class="text-muted">
+        <span class="mrl">{{ '总数：'|trans }}<strong class="inflow-num">{{ usersectiongoalcount }}</strong></span>
+      </p>
+      <tbody class="okrstbody">
+      {% for object in objects%}
+        {% include 'CustomBundle:okrs:user-table-tr.html.twig' %}
+      {% endfor %}
+      {% if objects is null %}
+        没有信息
+      {% endif %}
+      </tbody>
+  </table>
+  {% include 'org/batch-update-org-btn.html.twig' with {module:'user', formId:'user-table'} %}
+  {{ admin_macro.paginator(paginator) }}
+{% endblock %}

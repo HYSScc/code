@@ -1,0 +1,48 @@
+{% extends 'old-bootstrap-modal-layout.html.twig' %}
+
+{% set modalSize = 'large' %}
+
+{% block title %}{{'添加新岗位'|trans}}{% endblock %}
+{% block body %}
+
+<form id="user-create-form" class="form-horizontal" method="post" action="{{ path('admin_post_create')}}">
+
+  <div class="row form-group">
+    <div class="col-md-2 control-label">
+      <label for="code">{{'编码'|trans}}</label>
+    </div>
+    <div class="col-md-7 controls">
+      <input type="text" id="code" name="code" data-url="{{path('admin_user_create_nickname_check')}}" class="form-control" >
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-md-2 control-label">
+      <label for="nickname">{{'岗位名'|trans}}</label>
+    </div>
+    <div class="col-md-7 controls">
+      <input type="text" id="name" name="name" data-url="{{path('admin_user_create_nickname_check')}}" class="form-control" >
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-md-7 controls">
+      <input type="hidden" id="createdTime" name="createdTime" class="form-control" >
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-md-7 controls">
+      <input type="hidden" id="updatedTime" name="updatedTime" class="form-control" >
+    </div>
+  </div>
+
+</form>
+{% endblock %}
+
+{% block footer %}
+  <button id="user-create-btn" data-submiting-text="{{'正在提交'|trans}}" type="submit" class="btn btn-primary pull-right" data-toggle="form-submit" data-target="#user-create-form">{{'提交'|trans}}</button>
+  <button type="button" class="btn btn-link pull-right" data-dismiss="modal">{{'取消'|trans}}</button>
+  
+  <script>app.load('user/create-modal');</script>
+{% endblock %}

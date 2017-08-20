@@ -1,0 +1,79 @@
+{% extends 'old-bootstrap-modal-layout.html.twig' %}
+
+{% set modalSize = 'large' %}
+
+{% block title %}{% if sectionGoal|default() %}{{'编辑阶段目标'|trans}}{% else %}{{'添加阶段目标'|trans}}{% endif %}{% endblock %}
+{% block body %}
+
+  <form id="section-goal-create-form" class="form-horizontal" method="post" {% if sectionGoal|default() %}action="{{ path('admin_section_goal_update',{id:sectionGoal.id}) }}" {% else %} action="{{ path('admin_section_goal_create') }}"{% endif %}>
+
+    <div class="row">
+      <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label for="name">{{'名称:'|trans}}</label>
+      </div>
+      <div class="col-md-8 controls">
+        <input type="text" id="name" name="name" class="form-control" placeholder='{{'名称'|trans}}'  data-url="{{path('admin_section_goal_create_check',{id:sectionGoal.id|default(0)})}}" value="{{ sectionGoal.name|default('') }}">
+      </div>
+      </div>
+    {% if sectionGoal|default() %}
+      <div class="form-group">
+        <label class="col-md-3 control-label" for="year">{{ '年度:'|trans }}</label>
+        <div class="col-md-8 radios">
+          {{ sectionGoal.year|default()|trans }}
+        </div>
+      </div>
+    {% else %}
+      <div class="form-group">
+        <label class="col-md-3 control-label" for="year">{{ '年度:'|trans }}</label>
+        <div class="col-md-8 radios">
+          {{ radios('year', {'thisYear':'今年'|trans, 'nextYear':'明年'|trans},sectionGoal.year|default('thisYear')) }}
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="form-group">
+      <label  class="col-md-3 control-label" for="startTime" >{{'开始时间:'|trans}}</label>
+      <div class="col-md-4 controls">
+        <input type="text" id="startTime" name="startTime" data-url="" class="form-control" for="startTime" placeholder="开始时间" value="{{ sectionGoal.startTime|default()|date_format}}" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-md-3 control-label" for="confirmEndTime">{{'确认截止时间:'|trans}}</label>
+      <div class="col-md-4 controls">
+        <input type="text" id="confirmEndTime" name="confirmEndTime" data-url="" class="form-control" for="confirmEndTime" placeholder="确认截止时间" value="{{ sectionGoal.confirmEndTime|default()|date_format}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-md-3 control-label" >{{'调整时间:'|trans}}</label>
+      <div class="col-md-4 controls">
+        <input type="text" id="adjustStartTime" name="adjustStartTime" data-url="" class="form-control" for="adjustStartTime" placeholder="调整开始时间" value="{{ sectionGoal.adjustStartTime|default()|date_format}}" >
+      </div>
+      <div class="col-md-4 controls">
+        <input type="text" id="adjustEndTime" name="adjustEndTime" data-url="" class="form-control" for="adjustEndTime" placeholder="调整结束时间" value="{{ sectionGoal.adjustEndTime|default()|date_format}}" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-md-3 control-label" for="selfRatingEndTime" >{{'自评截止时间:'|trans}}</label>
+      <div class="col-md-4 controls">
+        <input type="text" id="selfRatingEndTime" name="selfRatingEndTime" data-url="" class="form-control" for="selfRatingEndTime" placeholder="自评截止时间" value="{{ sectionGoal.selfRatingEndTime|default()|date_format}}" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-md-3 control-label" for="othersRatingEndTime" >{{'他评截止时间:'|trans}}</label>
+      <div class="col-md-4 controls">
+        <input type="text" id="othersRatingEndTime" name="othersRatingEndTime" data-url="" class="form-control" for="othersRatingEndTime" placeholder="他评截止时间" value="{{ sectionGoal.othersRatingEndTime|default()|date_format}}" >
+      </div>
+    </div>
+    </div>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">
+  </form>
+{% endblock %}
+
+{% block footer %}
+  <button id="section-goal-create-btn" data-submiting-text="{{'正在提交'|trans}}" type="submit" class="btn btn-primary pull-right"
+          data-toggle="form-submit" data-target="#section-goal-create-form" >{{'提交'|trans}}
+  </button>
+  <button type="button" class="btn btn-link pull-right" data-dismiss="modal">{{'取消'|trans}}</button>
+  <script>app.load('../../../custom/js/controller/section-goal/create');</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'layout.html.twig' %}
+{% block title %}{{'会议室'|trans}} - {{ parent() }}{% endblock %}
+{% do script(['libs/echarts.js', 'custombundle/js/meeting/meeting-room/index.js'])%}
+
+{% block content %}
+  <div class="col-md-12">
+    <div class="page-header clearfix" style="margin:0px">
+      <h1 class="pull-left">{{ '会议室预约情况' }}</h1>
+      <div class="pull-right" style="margin-top:28px">
+        {% if is_granted('ROLE_BACKEND') %}
+          <a class="btn btn-success btn-sm" href="{{ path('admin_meeting_room_manage') }}">{{ '管理会议室' }}</a>
+          <a class="btn btn-success btn-sm" href="{{ path('admin_meeting_room_record') }}">{{ '会议记录' }}</a>
+        {% endif %}
+          <a class="btn btn-success btn-sm" href="{{ path('show_my_meetingRoom_record') }}">{{ '我的预约' }}</a>
+          <a id="create-meeting-record" href="#modal" data-toggle="modal" data-url="{{ path('create_my_meetingRoom_record') }}" class="btn btn-success btn-sm">{{ '预约会议室' }}</a>
+      </div>
+    </div>
+  <form id="meetingRoom-statistic-date">
+    <div class="form-group">
+      <label></label>
+    <div class="dropdown pull-right">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+       {{ '日期选择' }}
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a data-url="{{ path('meeting_room_statistic', {date:'today'}) }}">{{ '今天' }}</a></li>
+        {% for dateTime in dateTimes %}
+          <li><a data-url="{{ path('meeting_room_statistic', {date:dateTime}) }}">{{ dateTime }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    </div>
+  </form>
+
+  <div class="panel-body js-meetingRoom-areas" id="meeting-room-situation" data-url="{{ path('meeting_room_statistic', {date:'today'}) }}" style="width: 1200px;height:750px;"></div>
+
+  </div>
+{% endblock %}

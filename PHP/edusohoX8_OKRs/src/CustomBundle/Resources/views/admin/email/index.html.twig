@@ -1,0 +1,128 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% set menu = 'admin_email_manage' %}
+
+{% block main %}
+
+  {{ web_macro.flash_messages() }}
+  <form id="email-form" class="form-horizontal "  method="post" action="" >
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="email">{{'邮箱:'|trans}}</label>
+        </div>
+        <div class="col-md-6 controls">
+          <input type="text" id="email" name="email" class="form-control" placeholder='{{'邮箱'|trans}}'  value="{{ email.email|default('') }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="password">{{'密码:'|trans}}</label>
+        </div>
+        <div class="col-md-6 controls" >
+          <input type="password" id="password" name="password" class="form-control" placeholder='{{'密码'|trans}}'  value="{{ email.password|default('') }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+        </div>
+        <div class="col-md-6 controls">
+          <p>提示：系统邮箱，用于发送邮件通知，不是云邮件！配置只支持腾讯企业邮箱！默认为email:test@edusoho.com,password:Kzwll123!@#</p>
+        </div>
+      </div>
+      <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label >{{'确认时间提醒模板'|trans}}</label>
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="confirmWarnTitle">{{'title:'|trans}}</label>
+        </div>
+        <div class="col-md-6 controls">
+          <input type="text" id="confirmWarnTitle" name="confirmWarnTitle" class="form-control" placeholder='{{'title'|trans}}'  value="{{ email.confirmWarnTitle|default('') }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="confirmWarnBody">{{'body:'|trans}}</label>
+        </div>
+        <div class="col-md-6 controls">
+          <textarea  id="confirmWarnBody" name="confirmWarnBody"  rows="5" class="form-control">{{ email.confirmWarnBody|default('') }}</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+        </div>
+        <div class="col-md-6 controls">
+          <p>提示：*nickname*,*sectionGoal*是必填字段占位符分别是用户名称和阶段目标，修改模板时不建议删除和修改，易造成无法正常传达信息</p>
+        </div>
+      </div>
+      <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label >{{'他评提醒模板'|trans}}</label>
+      </div>
+      </div>
+    <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label for="othersRatingWarnTitle">{{'title:'|trans}}</label>
+      </div>
+      <div class="col-md-6 controls">
+        <input type="text" id="othersRatingWarnTitle" name="othersRatingWarnTitle" class="form-control" placeholder='{{'title'|trans}}'  value="{{ email.othersRatingWarnTitle|default('') }}">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label for="othersRatingWarnBody">{{'body:'|trans}}</label>
+      </div>
+      <div class="controls col-md-6">
+        <textarea  id="othersRatingWarnBody" name="othersRatingWarnBody" class="form-control" rows="5" >{{ email.othersRatingWarnBody|default('') }}</textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-3 control-label ">
+      </div>
+      <div class="col-md-6 controls">
+        <p>提示：*nickname*,*Rating*,*sectionGoal*,*sectionGoaUrl*,是必填字段占位符分别是用户名称,被评价人,阶段目标和评价网址，修改模板时不建议删除和修改，易造成无法正常传达信息</p>
+      </div>
+    </div>
+      <div class="form-group">
+      <div class="col-md-3 control-label ">
+        <label >{{'自评提醒模板'|trans}}</label>
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="selfRatingWarnTitle">{{'title:'|trans}}</label>
+        </div>
+        <div class="col-md-6 controls">
+          <input type="text" id="selfRatingWarnTitle" name="selfRatingWarnTitle" class="form-control" placeholder='{{'title'|trans}}'  value="{{ email.selfRatingWarnTitle|default('') }}">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+          <label for="selfRatingWarnBody">{{'body:'|trans}}</label>
+        </div>
+        <div class="controls col-md-6">
+          <textarea  id="selfRatingWarnBody" name="selfRatingWarnBody" class="form-control" rows="5">{{ email.selfRatingWarnBody|default('') }}</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+        </div>
+        <div class="col-md-6 controls">
+          <p>提示：*nickname*,*sectionGoal*,*sectionGoaUrl*,是必填字段占位符分别是用户名称,阶段目标和评价网址，修改模板时不建议删除和修改，易造成无法正常传达信息</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 control-label ">
+        </div>
+        <div class="col-md-6 controls">
+          <button class="btn btn-primary pull-right">{{'保存'|trans}}</button>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">
+  </form>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'bootstrap-modal-layout.html.twig' %}
+
+{% do script(['libs/jquery-validation.js', 'libs/bootstrap-datetimepicker.js', 'custombundle/js/meeting/meeting-record-modal/index.js']) %}
+
+{% set modalSize = 'large' %}
+
+{% block title %}{% if record|default() %}{{ '更新预约记录'|trans }}{% else %}{{ '会议室预约'|trans }}{% endif %}{% endblock %}
+
+{% block body %}
+  <form class="form-horizontal" id="meeting-record-form" method="post"
+      {% if record|default %} action="{{ path('update_my_meetingRoom_record', {recordId: record.id}) }}" {% else %} action="{{ path('create_my_meetingRoom_record') }}" {% endif %} data-id="">
+
+    <div class="form-group">
+      <div class="col-md-3 control-label">
+        <label>{{ '标题'|trans }}:</label>
+      </div>
+      <div class="col-md-7">
+        <input type="text" class="form-control" name="meetingTitle" value="{{ record.name|default('') }}" id="meetingTitle" data-id="{{ record.id|default('') }}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-3 control-label">
+        <label>{{ '会议室'|trans }}:</label>
+      </div>
+      <div class="col-md-7">
+        <select class="form-control" id="categoryId" name="categoryId">
+          {% for room in rooms %}
+            <option value="{{ room.id }}" data-max="{{ room.limitMax }}" data-min="{{ room.limitMin }}">{{ room.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-3 control-label">
+        <label>{{ '起止时间'|trans }}:</label>
+      </div>
+      <div class="col-md-7 controls">
+        <div class="col-md-2 control-label">
+          <span>{{ '日期'|trans }}:</span>
+        </div>
+        <div class="col-md-6">
+          <select class="form-control" id="dateSelect" name="dateSelect">
+            {% for date in dates %}
+              <option {% if record|default() %} {% if record.startTime|date('Y-m-d') == date %} selected="selected" {% endif %} {% endif %}>{{ date }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-3 control-label">
+
+      </div>
+      <div class="col-md-7 controls">
+        <div class="col-md-2 control-label">
+          <span>{{ '时间'|trans }}:</span>
+        </div>
+        <div class="col-md-4"><input class="startClock form-control" name="startClock" id="startClock" {% if record|default() %} value="{{ record.startTime|date('H:i')|default() }}" {% endif %} ></div>
+        <span class="col-md-1">-</span>
+        <div class="col-md-4">
+          <input class=" endClock form-control" name="endClock" id="endClock" {% if record|default() %} value="{{ record.endTime|date('H:i')|default() }}" {% endif %}>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-3 control-label">
+        <label>{{ '会议简介'|trans }}:</label>
+      </div>
+      <div class="col-md-7 controls">
+        <textarea class="form-control" id="meetingBrief" name="meetingBrief" rows="5" cols="20">{{ record.introduction|default('') }}</textarea>
+      </div>
+    </div>
+
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">
+
+  </form>
+{% endblock %}
+
+{% block footer %}
+  <button class="btn btn-primary pull-right" id="meeting-record-submit" type="button">{{ '保存'|trans }}</button>
+  <button class="btn btn-link pull-right" type="button" data-dismiss="modal">{{ '取消'|trans }}</button>
+{% endblock %}

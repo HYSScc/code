@@ -1,0 +1,27 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% set menu = 'admin_score_manage' %}
+
+{% block main %}
+
+  {{ web_macro.flash_messages() }}
+  <form id="message-search-form" class="form-inline well well-sm"  method="post" action="" >
+
+    {% for i in score %}
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="{{ i.1 }}" name="{{ i.1*10-1 }}" value="{{ i.0 }}" >
+      </div>
+      <div class="form-group">
+        <h5 class="form-control" >{{i.1}}</h5>
+      </div>
+
+      <div class="form-group">
+      </div>
+      <div class="form-group">
+      </div>
+    {% endfor %}
+    <button class="btn btn-primary">{{'确认修改'|trans}}</button>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">
+  </form>
+
+{% endblock %}

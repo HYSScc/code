@@ -1,0 +1,17 @@
+body {
+    padding-top: 30px;
+}
+
+.page-header {
+    width: 500px;
+    padding-bottom: 12px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-bottom-width: 4px;
+}
+
+.page-header h1 {
+    font-size: 350px;
+    line-height: 320px;
+    margin: 0 0;
+}

@@ -1,0 +1,39 @@
+{% extends 'bootstrap-modal-layout.html.twig' %}
+
+{% do script(['custombundle/js/object/modal/index.js']) %}
+
+{% set modalSize = 'large' %}
+
+{% block title %}{% if keyResult.id|default(null) %}{{ '编辑KR'|trans }}{% else %}{{ '添加KR'|trans }}{% endif %}{% endblock %}
+
+{% block body %}
+  <div id="kr-manage-form" class="form-horizontal" data-id="{{ keyResult.id|default(null) }}">
+    {% if keyResults|default() > 4 %}
+      <div class="col-md-8 controls">
+        <p>KR数量已达最大值</p>
+      </div>
+    {% else %}
+      <label class="col-md-2 control-label" for="keyResultName">{{ '名称'|trans }}</label>
+      <div class="col-md-8 controls">
+        <input class="form-control" id="keyResultName" type="text" value="{{ keyResult.name|default('') }}"
+               tabindex="1">
+      </div>
+    {% endif %}
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% if keyResult.id|default(null) %}
+    <button id="deleteKR" class="btn btn-default pull-left" tabindex="5" data-url="{{ path('user_deleteKR', {id:userId, KRId:keyResult.id}) }}">
+      <i class="glyphicon glyphicon-trash"></i>{{ '删除'|trans }}
+    </button>
+    <button class="btn btn-default" data-dismiss="modal">取消</button>
+    <button class="btn btn-primary" data-submiting-text="{{ '正在提交'|trans }}" id="editNewKR" data-url="{{ path('user_editKR', {id:userId, KRId:keyResult.id}) }}">保存</button>
+  {% else %}
+    <button class="btn btn-default" data-dismiss="modal">取消</button>
+    {% if keyResults|default() < 5 %}
+      <button class="btn btn-primary" data-submiting-text="{{ '正在提交'|trans }}" id="addKRButton" data-url="{{ path('user_addKeyResults', {id:userId, goalId:keyResult.goalId}) }}">添加</button>
+    {% endif %}
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://www.phpunit.de/manual/current/en/appendixes.configuration.html -->
+<phpunit
+    backupGlobals               = "false"
+    backupStaticAttributes      = "false"
+    colors                      = "true"
+    convertErrorsToExceptions   = "true"
+    convertNoticesToExceptions  = "true"
+    convertWarningsToExceptions = "true"
+    processIsolation            = "false"
+    stopOnFailure               = "false"
+    syntaxCheck                 = "false"
+    bootstrap                   = "../bootstrap/bootstrap_test.php" >
+
+    <testsuites>
+        <testsuite name="unit">
+            <directory>../src/CustomBundle/Tests</directory>
+            <directory>../src/CustomBundle/Extensions/DataTag/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" />
+    </php>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../src/CustomBundle/Biz</directory>
+            <directory suffix=".php">../src/CustomBundle/Extensions/DataTag</directory>
+            <exclude>
+                <directory>../src/CustomBundle/Biz/Activity</directory>
+                <directory>../src/CustomBundle/Biz/Course</directory>
+                <directory>../src/CustomBundle/Extensions/DataTag/Tests</directory>
+                <directory>../src/CustomBundle/Biz/PhpMailer</directory>
+                <directory>../src/CustomBundle/Biz/Mail</directory>
+                <directory>../src/CustomBundle/Biz/*/*Job</directory>
+            </exclude>
+
+        </whitelist>
+    </filter>
+
+</phpunit>

@@ -1,0 +1,122 @@
+admin_score:
+    path: /score
+    defaults: { _controller: CustomBundle:Admin/Score:getScore }
+    permissions: [admin]
+
+admin_score_edit:
+    path:  /score/edit
+    defaults: { _controller: CustomBundle:Admin/Score:setScore }
+
+admin_section_goal_manage:
+    path:     /section_goal
+    defaults: { _controller: CustomBundle:Admin/SectionGoal:index }
+
+admin_section_goal_create:
+    path:     /section_goal/create
+    defaults: { _controller: CustomBundle:Admin/SectionGoal:create }
+
+admin_section_goal_update:
+    path:     /section_goal/update/{id}
+    defaults: { _controller: CustomBundle:Admin/SectionGoal:update }
+
+admin_section_goal_delete:
+    path:     /section_goal/delete/{id}
+    defaults: { _controller: CustomBundle:Admin/SectionGoal:delete }
+
+admin_section_goal_create_check:
+    path:  /section_goal/create/name/check/{id}
+    defaults: { _controller: CustomBundle:Admin/SectionGoal:nameCheck }
+    permissions: [admin_section_goal_manage]
+
+admin_post_manage:
+    path:     /post
+    defaults: { _controller: CustomBundle:Admin/Post:manage }
+
+admin_org_create:
+    path: /org/create
+    defaults: { _controller: CustomBundle:Admin/OrgManage:create }
+
+admin_org_update:
+    path: /org/{id}/update
+    defaults: { _controller: CustomBundle:Admin/OrgManage:update }
+
+admin_org_manage_search:
+    path: /org_manage/search
+    defaults: { _controller: CustomBundle:Admin/OrgManage:searchManagers }
+
+admin_post_show:
+    path:  /post/show
+    defaults: { _controller: CustomBundle:Admin/PostManagement:show }
+
+admin_post_manage:
+    path:  /post
+    defaults: { _controller: CustomBundle:Admin/PostManagement:index }
+
+admin_post_create:
+    path:  /post/create
+    defaults: {  _controller: CustomBundle:Admin/PostManagement:addPost }
+
+admin_post_update:
+    path:  /post/update
+    defaults: { _controller: CustomBundle:Admin/PostManagement:updatePost }
+
+admin_post_delete:
+    path:  /post/delete
+    defaults: { _controller: CustomBundle:Admin/PostManagement:deletePost }
+    methods: [POST]
+    permissions: [admin_post_manage]
+
+admin_goal_approval_manage:
+    path:  /approval
+    defaults: { _controller: CustomBundle:Admin/goalApproval:index }
+
+admin_goal_approval_edit:
+    path:  /approval/edit
+    defaults: { _controller: CustomBundle:Admin/goalApproval:edit }
+
+admin_goal_approval_show:
+    path:  /approval/show
+    defaults: { _controller: CustomBundle:Admin/goalApproval:show }
+
+admin_goal_approval_update:
+    path:  /approval/{id}/update
+    defaults: { _controller: CustomBundle:Admin/goalApproval:update }
+
+admin_meeting_room_manage:
+    path:  /meeting_room
+    defaults: { _controller: CustomBundle:Admin/MeetingRoom:index }
+
+admin_meeting_room_create:
+    path:  /meeting_room/create
+    defaults: { _controller: CustomBundle:Admin/MeetingRoom:create }
+
+admin_meeting_room_update:
+    path:  /meeting_room/update/{id}
+    defaults: { _controller: CustomBundle:Admin/MeetingRoom:update }
+
+admin_meeting_room_delete:
+    path:  /meeting_room/delete/{id}
+    defaults: { _controller: CustomBundle:Admin/MeetingRoom:delete }
+
+admin_meeting_room_create_check:
+    path:  /meeting_room/name_check/{id}
+    defaults: { _controller: CustomBundle:Admin/MeetingRoom:nameCheck }
+    permissions: [admin_meeting_room_manage]
+
+admin_meeting_room_record:
+    path:  /meeting_record
+    defaults: { _controller: CustomBundle:Admin/MeetingRecord:index }
+
+admin_meeting_record_update:
+    path:  /meeting_record/update/{id}
+    defaults: { _controller: CustomBundle:Admin/MeetingRecord:update }
+
+admin_meeting_record_delete:
+    path:  /meeting_record/delete/{id}
+    defaults: { _controller: CustomBundle:Admin/MeetingRecord:delete }
+
+admin_email_manage:
+    path: /email
+    defaults: { _controller: CustomBundle:Admin/Email:index }
+    permissions: [admin]
+

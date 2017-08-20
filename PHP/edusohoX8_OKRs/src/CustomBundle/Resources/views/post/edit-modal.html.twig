@@ -1,0 +1,47 @@
+{% extends 'old-bootstrap-modal-layout.html.twig' %}
+
+{% set modalSize = 'large' %}
+
+{% block title %}{{'编辑信息'|trans}}{% endblock %}
+{% block body %}
+
+<form id="user-edit-form" class="form-horizontal" method="post" action="{{ url('admin_post_update', {id:post.id}) }}">
+
+  <div class="row form-group">
+    <div class="col-md-2 control-label">
+      <label for="code">{{'id'|trans}}</label>
+    </div>
+    <div class="col-md-7 controls">
+      <input type="text" id="id" name="id" class="form-control" value="{{post.id}}" readonly>
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-md-2 control-label">
+      <label for="code">{{'Code'|trans}}</label>
+    </div>
+    <div class="col-md-7 controls">
+      <input type="text" id="code" name="code" class="form-control" value="{{post.code}}" readonly>
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-md-2 control-label">
+      <label for="name">{{'name'|trans}}</label>
+    </div>
+    <div class="col-md-7 controls">
+      <input type="text" id="name" name="name" class="form-control" value="{{post.name}}" >
+    </div>
+  </div> 
+
+  <input type="hidden" name="_csrf_token" value="{{ csrf_token('site') }}">  
+
+</form>
+{% endblock %}
+
+{% block footer %}
+  <button id="edit-user-btn" data-submiting-text="{{'正在提交'|trans}}" type="submit" class="btn btn-primary pull-right" data-toggle="form-submit" data-target="#user-edit-form">{{'保存'|trans}}</button>
+  <button type="button" class="btn btn-link pull-right" data-dismiss="modal">{{'取消'|trans}}</button>
+  
+  <script>app.load('user/edit-modal');</script>
+{% endblock %}

@@ -1,0 +1,88 @@
+admin_post_manage:
+    name: 岗位管理
+    parent: admin_user
+    after: admin_message_manage
+    children: 
+        admin_post:
+              disable: true
+              name: 岗位管理
+              router_name: admin_post_manage
+              children:
+                  admin_post_create:
+                      name: '添加新岗位'
+                      mode: modal
+                      group: topBtn
+                      visable: (user.type != 'system')
+
+admin_score:
+    name: 评分管理
+    parent: admin_system
+    children:
+        admin_score_manage:
+            name: 评分管理
+            disable: true
+            router_name: admin_score
+
+admin_section_goal:
+    parent: admin_user
+    name: 目标管理
+    after: admin_message_manage
+    children:
+        admin_section_goal_manage:
+            name: 目标管理
+            disable: true
+            children:
+                admin_section_goal_create:
+                    name: '添加阶段目标'
+                    mode: modal
+                    group: topBtn
+                    visable: (user.type != 'system')
+
+admin_org_manage:
+    name: 组织机构管理
+    parent: admin_user
+    after: admin_user_manage
+    children:
+        admin_org:
+            name: 组织机构
+            disable: true
+
+
+admin_goal_approval_manage:
+    name: 审核管理
+    parent: admin_user
+    after: admin_message_manage
+    children:
+        admin_goal_approval:
+            name: 审核管理
+            disable: true
+            router_name: admin_goal_approval_manage
+
+admin_meeting_room:
+    parent: admin_user
+    name: 会议室管理
+    after: admin_section_goal
+    children:
+        admin_meeting_room_manage:
+            name: 会议室管理
+            disable: true
+            children:
+                admin_meeting_room_create:
+                    name: '添加会议室'
+                    mode: modal
+                    group: topBtn
+                    visable: (user.type != 'system')
+        admin_meeting_room_record:
+            name: 会议室记录
+            disable: true
+
+
+admin_email:
+    name: 邮箱管理
+    parent: admin_system
+    after: admin_score
+    children:
+        admin_email_manage:
+            name: 默认邮箱管理
+            disable: true
+

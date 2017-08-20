@@ -1,0 +1,12 @@
+<tr>
+  <td>{{ meetingRoom.id |default() }}</td>
+  <td>{{ meetingRoom.name|default('') }}</td>
+  <td>{{ meetingRoom.limitMin|default(0)}}-{{ meetingRoom.limitMax|default(0) }}人</td>
+  <td>{{ meetingRoom.remark|default('无') }}</td>
+  <td>
+    <button class="btn btn-default btn-sm btn-meeting-room-update" data-name="编辑" data-url="{{ path('admin_meeting_room_update',{id:meetingRoom.id|default(0)}) }}" data-toggle="modal" data-target="#modal">
+      {{'编辑'|trans }}
+    </button>
+    <button class="btn btn-default btn-sm btn-meeting-room-delete" data-url="{{ path('admin_meeting_room_delete',{id:meetingRoom.id|default(0)}) }}">{{'删除'|trans}}</button>
+  </td>
+</tr>
